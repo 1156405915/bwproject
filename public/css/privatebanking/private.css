@@ -1,0 +1,349 @@
+.banner {
+    position: relative;
+    height: 350px;
+    background: url(https://act.bundwealth.com/upload/images/bwcus/privatebanking/new_sm_bannerbg.jpg) no-repeat center top;
+}
+
+.banner_content {
+    display: block;
+    margin: 0 auto;
+    width: 1100px;
+    position: relative;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.banner_con {
+    width: 1100px;
+    height: 350px;
+}
+
+.content {
+    position: absolute;
+    width: 1100px;
+    left: 0;
+    top: 0;
+    text-align: center;
+    padding-top: 40px;
+    color: #fff;
+}
+
+.content h2 {
+    font-size: 72px;
+    font-weight: normal;
+    margin-bottom: 15px;
+    text-shadow: 0 2px 9px rgba(0, 0, 0, .5);
+}
+
+.title {
+    font-size: 36px;
+    margin-bottom: 13px;
+    text-shadow: 0 2px 9px rgba(0, 0, 0, .5);
+}
+
+.ms {
+    background: linear-gradient(-180deg, #c4a27d 0%, #8c6e54 100%);
+    border-radius: 100px;
+    width: 414px;
+    height: 30px;
+    font-size: 14px;
+    ;
+    line-height: 30px;
+    margin: 0 auto 30px;
+}
+
+.content a {
+    border: 1px solid #ffffff;
+    border-radius: 100px;
+    width: 106px;
+    height: 35px;
+    display: block;
+    margin: 0 auto;
+    line-height: 35px;
+    color: #fff;
+}
+
+.wrap {
+    width: 1100px;
+    margin: 0 auto;
+    padding: 30px 0 105px;
+}
+
+
+/*精选-begin*/
+
+.wrap h4 {
+    font-size: 20px;
+    color: #333;
+    padding-left: 15px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.wrap h4 i {
+    position: absolute;
+    width: 5px;
+    height: 20px;
+    border-radius: 4px;
+    left: 0;
+    top: 5px;
+}
+
+i.puple {
+    background: #7575bd;
+}
+
+a.more {
+    float: right;
+    font-size: 14px;
+    color: #adadad;
+}
+
+.pro_list {
+    margin-bottom: 25px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .06);
+}
+
+.pro_img {
+    float: left;
+    width: 263px;
+    height: 327px;
+    background: #A7E2F8;
+}
+
+.small_main {
+    background: #fff;
+    width: 837px;
+    text-align: center;
+    height: 327px;
+    overflow: hidden;
+    position: relative;
+}
+
+.prev {
+    background: url(https://act.bundwealth.com/upload/images/bwcus/privatebanking/bw_new_pub.png) no-repeat;
+    background-position: -50px -40px;
+    position: absolute;
+    left: 5px;
+    top: 160px;
+    display: block;
+    width: 20px;
+    height: 32px;
+    z-index: 5;
+    cursor: pointer;
+    transition: all .2s linear;
+}
+
+.prev:hover {
+    background-position: -50px -78px;
+    transition: all .2s linear;
+}
+
+.next {
+    background: url(https://act.bundwealth.com/upload/images/bwcus/privatebanking/bw_new_pub.png) no-repeat;
+    background-position: -50px -117px;
+    position: absolute;
+    right: 5px;
+    top: 160px;
+    display: block;
+    width: 20px;
+    height: 32px;
+    z-index: 5;
+    cursor: pointer;
+    transition: all .2s linear;
+}
+
+.next:hover {
+    background-position: -50px -156px;
+    transition: all .2s linear;
+}
+
+.pro_content {
+    width: 2511px;
+    position: absolute;
+    left: 0;
+    transition: all .5s ease-in-out;
+}
+
+.pro {
+    float: left;
+    width: 837px;
+}
+
+.jx_content {
+    width: 50%;
+    float: left;
+}
+
+.pro .pro_name {
+    font-size: 22px;
+    color: #333;
+    padding-top: 35px;
+    margin-bottom: 5px;
+}
+
+p.lab1 {
+    font-size: 12px;
+    color: #a68970;
+    margin-bottom: 11px;
+}
+
+span.lab0 {
+    display: inline-block;
+    height: 22px;
+    line-height: 22px;
+    border-radius: 999px;
+    color: #333;
+    font-size: 12px;
+    border: 1px solid #aaa;
+    /*padding: 0 10px;*/
+    width: 65px;
+    text-align: center;
+}
+
+.bod {
+    border-right: 1px solid #e5e5e5;
+}
+
+.pro p.pro_sy {
+    font-size: 72px;
+    color: #ff7334;
+    height: 56px;
+    line-height: 56px;
+    margin-top: 15px;
+}
+
+.pro p.pro_sy span {
+    font-size: 36px;
+}
+
+p.lab2 {
+    font-size: 14px;
+    color: #979797;
+    margin: 15px 0 30px;
+}
+
+a.sg {
+    border: 1px solid #c3ad9b;
+    border-radius: 4px;
+    width: 108px;
+    height: 44px;
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 20px;
+    color: #8a5e3c;
+    line-height: 44px;
+}
+
+a.sg:hover {
+    background: linear-gradient(-180deg, #ceb495 0%, #a68970 100%);
+    color: #fff;
+}
+
+
+/*产品类型-begin*/
+
+div.type_list {
+    background: #fff;
+    margin-bottom: 24px;
+    padding-right: 20px;
+    border-top: 3px solid #8384c5;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .06);
+}
+
+p.pro_typ {
+    font-size: 14px;
+    color: #999;
+    max-width: 790px;
+    padding: 32px 0 22px 78px;
+    position: relative;
+}
+
+.pro_typ i {
+    position: absolute;
+    left: 20px;
+    top: 32px;
+}
+
+.pro_typ span {
+    color: #333;
+    float: left;
+    margin-left: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    padding: 0 5px;
+    border-radius: 999px;
+}
+
+.pro_typ span:hover {
+    background: #a68970;
+    color: #fff;
+}
+
+.pad20 {
+    padding-top: 23px;
+}
+
+.search {
+    width: 211px;
+    height: 38px;
+    border: 1px solid #a68970;
+    background: #a68970 url(https://act.bundwealth.com/upload/images/bwcus/privatebanking/bw_new_pub.png) no-repeat 176px -158px;
+    border-radius: 4px;
+}
+
+.search input {
+    line-height: 36px;
+    display: inline-block;
+    height: 36px;
+    width: 168px;
+    border: none;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    padding-left: 20px;
+    font-size: 14px;
+}
+
+.sear_form {
+    display: block;
+    height: 38px;
+    width: 38px;
+    cursor: pointer;
+}
+
+::-webkit-input-placeholder {
+    font-size: 14px;
+    color: #b1b1b1;
+}
+
+::-moz-input-placeholder {
+    font-size: 14px;
+    color: #b1b1b1;
+}
+
+::-o-input-placeholder {
+    font-size: 14px;
+    color: #b1b1b1;
+}
+
+::-ms-input-placeholder {
+    font-size: 14px;
+    color: #b1b1b1;
+}
+
+
+/*精选券商资管-begin*/
+
+i.pink {
+    background: #dd8982;
+}
+
+div.red_bod {
+    border-top: 3px solid #d58382;
+}

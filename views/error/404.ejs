@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>404</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<style type="text/css">
+		body {
+  padding-top: 25px;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: url("../../images/bw-app/404-back.jpg");
+}
+a {
+  color: #00B7FF;
+}
+#logo {
+  width: 100px;
+  z-index: 2000;
+}
+#tintblue {
+  position: fixed;
+  bottom: 0;
+  height: 111px;
+  left: 0px;
+  z-index: 100;
+  animation: tintMove 6s infinite linear;
+  -moz-animation: tintMove 6s infinite linear; /* Firefox */
+  -webkit-animation: tintMove 6s infinite linear; /* Safari and Chrome */
+  -o-animation: tintMove 6s infinite linear; /* Opera */
+}
+#deepblue {
+  position: fixed;
+  bottom: 0;
+  height: 111px;
+  left: 20px;
+  z-index: 200;
+  animation: deepMove 5s infinite linear;
+  -moz-animation: deepMove 5s infinite linear; /* Firefox */
+  -webkit-animation: deepMove 5s infinite linear; /* Safari and Chrome */
+  -o-animation: deepMove 5s infinite linear; /* Opera */
+}
+.text-center {
+  text-align: center;
+  position: relative;
+  z-index: -10;
+}
+#icon {
+  margin-top: 80px;
+  width: 80%;
+}
+.text {
+  margin-top: 20%;
+  font-family: "微软雅黑";
+  font-size: 16px;
+  z-index: 2000;
+}
+
+/*底部*/
+@keyframes tintMove {
+  0% {
+    left: -10px;
+  }
+  25% {
+    left: -35px;
+  }
+  50% {
+    left: -60px;
+  }
+  75% {
+    left: -35px;
+  }
+  100% {
+    left: -10px;
+  }
+}
+@keyframes deepMove {
+  0% {
+    left: -70px;
+  }
+  25% {
+    left: -60px;
+  }
+  50% {
+    left: -10px;
+  }
+  75% {
+    left: -60px;
+  }
+  100% {
+    left: -70px;
+  }
+}
+
+/*火箭*/
+.roketbox {
+  width: 250px;
+  height: 250px;
+  top: -12%;
+  left: -1%;
+  position: absolute;
+  animation: roketbox 8s linear 0s infinite;
+  -moz-animation: roketbox 8s linear 0s infinite;
+  -webkit-animation: roketbox 8s linear 0s infinite;
+  -o-animation: roketbox 8s linear 0s infinite;
+  z-index: -10;
+}
+#roket {
+
+  /*position: absolute;*/
+  width: 31%;
+  margin-right: -45%;
+  animation: roket 15s linear 0s infinite;
+  -moz-animation: roket 15s linear 0s infinite;
+  -webkit-animation: roket 15s linear 0s infinite;
+  -o-animation: roket 15s linear 0s infinite;
+  transform-origin: 0% 150%;
+  z-index: -10;
+}
+@keyframes roketbox {
+  from {
+    transform: rotate(-360deg);
+    -moz-transform: rotate(-360deg);
+    -webkit-transform: rotate(-360deg);
+    -o-transform: rotate(-360deg);
+  }
+}
+@keyframes roket {
+  0% {
+
+    /*transform: scale(1, 1);   */
+    transform: rotate(45deg)  scale(1);
+    -moz-transform: rotate(45deg)  scale(1);
+    -webkit-transform: rotate(45deg)  scale(1);
+    -o-transform: rotate(45deg)  scale(1);
+  }
+  25% {
+
+    /*transform: scale(1, 1);   */
+    transform: rotate(45deg)  scale(1);
+    -moz-transform: rotate(45deg)  scale(1);
+    -webkit-transform: rotate(45deg)  scale(1);
+    -o-transform: rotate(45deg)  scale(1);
+  }
+  50% {
+
+    /*transform: scale(1, 1);   */
+    transform: rotate(45deg)  scale(0);
+    -moz-transform: rotate(45deg)  scale(0);
+    -webkit-transform: rotate(45deg)  scale(0);
+    -o-transform: rotate(45deg)  scale(0);
+  }
+  75% {
+
+    /*transform: scale(1, 1);   */
+    transform: rotate(45deg)  scale(0);
+    -moz-transform: rotate(45deg)  scale(0);
+    -webkit-transform: rotate(45deg)  scale(0);
+    -o-transform: rotate(45deg)  scale(0);
+  }
+  100% {
+
+    /*transform: scale(0.1, 0.1);*/
+    transform: rotate(45deg) scale(1);
+    -moz-transform: rotate(45deg) scale(1);
+    -webkit-transform: rotate(45deg) scale(1);
+    -o-transform: rotate(45deg) scale(1);
+  }
+}
+.back-btn{
+    font-size: 18px;   
+    font-family: "微软雅黑";
+    background: rgba(0,0,0,0);
+    border: 0;
+    border-radius: 6px;
+    margin-top: 15px;
+    z-index:9999;
+}
+</style>
+</head>
+<body id="404body">
+	<img src="https://www.bundwealth.com/mobile/images/bw-app/404-logo.png" alt="" id="logo">
+	<div class="text-center">
+		<img src="https://www.bundwealth.com/mobile/images/bw-app/404-icon.png" alt="" id="icon">
+		<div class="roketbox">
+			<img src="https://www.bundwealth.com/mobile/images/bw-app/404-roket.png" alt="" id="roket">
+		</div>    
+		<div class="text">
+			哎呀，你要找的页面走丢了哦
+		</div>
+	</div>
+	<div class="out-btn">
+    <button class="back-btn">返回首页</button> 
+  </div>
+	<footer style="width: 100%">
+		<img src="https://www.bundwealth.com/mobile/images/bw-app/404-tintblue.png" alt="" id="tintblue">
+		<img src="https://www.bundwealth.com/mobile/images/bw-app/404-deepblue.png" alt="" id="deepblue">
+	</footer>
+</body>
+<script type="text/javascript" src="https://www.bundwealth.com/mobile/js/lib/jquery-2.1.4/jquery-2.1.4.js?v=1476856921224" id="jquery"></script>
+<script type="text/javascript" src="https://www.bundwealth.com/mobile/js/lib/jquery-2.1.4/jquery.tap.js?v=1476856921224" id="jquery-tap"></script>
+<script type="text/javascript" src="https://www.bundwealth.com/mobile/js/bw-app/bwapp.js" id="bwapp"></script>
+<script type="text/javascript">
+	document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+	document.getElementById("logo").src=getCurServer()+"/images/bw-app/404-logo.png";
+	document.getElementById("icon").src=getCurServer()+"/images/bw-app/404-icon.png";
+	document.getElementById("roket").src=getCurServer()+"/images/bw-app/404-roket.png";
+	document.getElementById("tintblue").src=getCurServer()+"/images/bw-app/404-tintblue.png";
+	document.getElementById("deepblue").src=getCurServer()+"/images/bw-app/404-deepblue.png";
+	document.getElementById("404body").style.background="url("+getCurServer()+"/images/bw-app/404-back.png"+")";
+
+ 
+
+  var bwapp=new bwapp();
+	//获取当前服务名
+function getCurServer(){
+  var cur_path=window.location.pathname;
+  var server=window.location.origin+"/";
+  if(cur_path.indexOf("mobiletest")>0)
+  {
+    //准生产环境
+    server+="mobiletest";
+  }
+  else{
+    server+="mobile";
+  }
+  return server;
+}  
+
+  $(".back-btn").on('tap',function(e){
+    e.preventDefault();
+    bwapp.nodeHref("/");
+
+  })
+
+
+</script>
+</html>

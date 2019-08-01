@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit" >
+<meta name="keywords" content="外滩云,汇付天下,理财,在线理财,在线投资,投资理财,理财平台,理财社区,外滩云财富,小额投资,基金投资,保险理财,公募私募,资管产品" > 
+<meta name="description" content="外滩云财富于2015年由汇付天下等共同投资成立，引入欧美成熟财富管理理念和金融行业专业团队，为投资者提供“资产配置+风险管理”为导向的财富管理服务，旨在成为中国最先进的线上财富管理平台。" >
+<meta name="baidu-site-verification" content="86PEnyaw5d" >
+<title>外滩云财富</title>
+<link rel="stylesheet" href="css/bwPcIndex/newindex.css" type="text/css">
+<script>        
+// window.history.pushState(null, null, "/");
+</script>
+</head>
+<body>
+<% include ../include/common_head %>
+    <!-- banner部分 -->
+    <div id="scrollBanner" class="flexslider">
+        <ul class="slides" id="scrollBannerUl">
+            
+            <%if(totalImg.CircleImg){%>
+                <% totalImg.CircleImg.forEach(function(item){%>
+                <li><a target="_blank" href="<%=item.link%>" class="banner_img" style="background: url(<%=item.pic_path%>) no-repeat center;"></a></li>
+                <%})%>
+            <%}else{%>
+            <div id="pre-loading">     
+                <div class="loader">
+                    <div class="loader-inner ball-beat">
+                        <div></div>
+                        <div></div>
+                        <div></div>            
+                    </div>
+                </div>
+            </div>
+            <%}%>
+        </ul>
+        <div class="banner-con">
+            <div class="login_con ">
+                <h3><img src="https://act.bundwealth.com/upload/images/bwcus/index_slogan_w.png" alt="缔造财富管理美好体验"></h3>
+                <p class="list_mid">稳健投资首选</p>
+                <p class="plat">一站式财富管理平台</p>
+                <a href="">注册享受双倍收益</a>
+                <p class="zh">已有账号?<a href="">立即登录</a></p>
+                <i class="login_bg"></i>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- 四位一体部分 -->
+    <%if(totalImg.FourActivityImg){var i=0;%>
+    <div class="list-wrap">
+        <div class="list-type clearafter">
+            <% totalImg.FourActivityImg.forEach(function(item){if(i<=3){%>
+            <div class="list-con list-one">
+                <img src="<%=item.pic_path%>" alt="<%=item.note%>">
+                <h3><a href="<%=item.link%>"><%=item.remark%></a></h3>
+                <p><%=item.note%></p>
+            </div>
+            <%i++;}})%>
+      <!--       <div class="list-con list-one">
+                <img src="">
+                <h3><a href="">新人有礼</a></h3>
+                <p>注册就送888，新人专享等你来</p>
+            </div>
+            <div class="list-con list-two">
+                <img src="">
+                <h3><a href="">邀请有奖</a></h3>
+                <p>成为外星人，邀请好友拿大奖</p>
+            </div>
+            <div class="list-con list-thr">
+                <img src="">
+                <h3><a href="">我要领券</a></h3>
+                <p>先领券再投资，抢占最高收益</p>
+            </div>
+            <div class="list-con list-for">
+                <img src="">
+                <h3><a href="">活动中心</a></h3>
+                <p>精彩活动尽在掌握，不容错过</p>
+            </div> -->
+        </div>
+    </div>
+    <%}%>
+    <!-- 轮廓 -->
+    <div class="wrap">
+        <%if(announcement){%>
+        <ul class="bw-gonggao clearafter">
+            <i class="gb-ico"></i>
+            <div class="notice-div">
+                <div class="notice-in-div">
+                    <% announcement.forEach(function(item){%>
+                        <a class="notice-span" href="<%= item.url %>" target="_blank"><%= item.tit %></a>
+                    <%})%>
+                </div>
+                <div class="notice-in-div-2">
+                    <% announcement.forEach(function(item){%>
+                        <a class="notice-span" href="<%= item.url %>" target="_blank"><%= item.tit %></a>
+                    <%})%>
+                </div>
+            </div>
+        </ul>
+        <%}%>
+        <%if(totalImg.ThreeActivityImg){var i=0;%>
+        <div class="hotp clearafter">
+            <% totalImg.ThreeActivityImg.forEach(function(item){if(i==1){%>
+                <div class="hot-con marz12">
+                    <img src="<%=item.pic_path%>" alt="<%=item.note%>" class="threeimg" />
+                </div>
+                <%}else{%>
+                <div class="hot-con">
+                    <img src="<%=item.pic_path%>" alt="<%=item.note%>" class="threeimg" />
+                </div>
+                <%}%>
+            <%i++;})%>
+        </div>
+        <%}%>
+        <!-- 热门精选 -->
+        <%if(choiceProArray){var i=0;%>
+        <div class="htb">
+            <div class="title clearafter">
+                <i class="org"></i> 精选
+            </div>
+            <div class="htb-con clearafter">
+                <% choiceProArray.forEach(function(item){if(i==3){%>
+                <div class="pro-list pro-last">
+                <%}else{%>
+                <div class="pro-list">
+                <%}%>
+                <%if(item.hornTags){%>
+                <span class="ticket"><%=item.hornTags%></span>
+                <%}%>
+                <p class="name"><%=item.proName%></p>
+                    <p class="cot">
+                        <%if(item.atvTags){%>
+                        <span><%=item.atvTags%></span>
+                        <%}%>
+                    </p>
+                    <p class="syl"><%-item.expRate%></p>
+                    <p class="ally"><%=item.expRateTxt%></p>
+                    <div class="type clearafter">
+                        <div class="typ-l">
+                            <p><span class="org"><%=item.leftKey%></span>天</p>
+                            <p class="tz"><%=item.leftTxt%></p>
+                        </div>
+                        <div class="line"></div>
+                        <div class="typ-l">
+                            <p class="min"><%=item.rightKey%>元</p>
+                            <p class="qt"><%=item.rightTxt%></p>
+                        </div>
+                    </div>
+                    <div class="load clearafter">
+                    </div>
+                    <a href="<%=item.url%>">立即购买</a>
+                </div>
+                <%i++;})%>
+            </div>
+        </div>
+        <%}%>
+        <!-- 活期理财/定期理财 -->
+        <div class="pro">
+            <div class="title clearafter">
+                <i class="blue"></i> 活期理财/定期理财
+            </div>
+            <ul class="pro-tab clearafter">
+                <li class="htb active"><i></i>话题宝</li>
+                <li class="kuaitou"><i></i>快投</li>
+                <li class="small-pro"><i></i>小额理财<span class="ques">?</span></li>
+                <li class="month-flow"><i></i>月月开花</li>
+                <li class="gushou"><i></i>安投</li>
+            </ul>
+            <div class="pad00">
+                <!-- 小额理财表格 -->
+                <!-- <table id="small">
+				<tr>
+					<th width="168">预期收益率</th>
+					<th width="190">产品名称</th>
+					<th width="80">投资期限</th>
+					<th width="130">剩余可投</th>
+					<th width="160">项目金额</th>
+					<th width="130">起投金额</th>
+					<th width="">操作</th>
+				</tr>
+				<tr>
+					<td>
+						<div>
+							<p class="yq">5.40%</p>
+							<p class="jd">投资进度:9%</p>
+							<p class="load2"><span></span></p>
+							<p class="line2"></p>
+						</div>
+					</td>
+					<td>
+						<p class="pro-name">云财富 睿投<span>定期</span></p>
+						<p class="pro-bm">B2-R7-20161206-002</p>
+					</td>
+					<td>7天</td>
+					<td>1,626,000元</td>
+					<td>1,626,000元</td>
+					<td>1,000元</td>
+					<td><a href="">立即抢购</a></td>
+				</tr>
+				<tr>
+					<td>
+						<div>
+							<p class="yq">5.40%</p>
+							<p class="jd">投资进度:9%</p>
+							<p class="load2"><span></span></p>
+							<p class="line2"></p>
+						</div>
+					</td>
+					<td>
+						<p class="pro-name">云财富 睿投<span>定期</span></p>
+						<p class="pro-bm">B2-R7-20161206-002</p>
+					</td>
+					<td>7天</td>
+					<td>1,626,000元</td>
+					<td>1,626,000元</td>
+					<td>1,000元</td>
+					<td><a href="">立即抢购</a></td>
+				</tr>
+				<tr>
+					<td>
+						<div>
+							<p class="yq">5.40%</p>
+							<p class="jd">投资进度:9%</p>
+							<p class="load2"><span></span></p>
+							<p class="line2"></p>
+						</div>
+					</td>
+					<td>
+						<p class="pro-name">云财富 睿投<span>定期</span></p>
+						<p class="pro-bm">B2-R7-20161206-002</p>
+					</td>
+					<td>7天</td>
+					<td>1,626,000元</td>
+					<td>1,626,000元</td>
+					<td>1,000元</td>
+					<td><a href="">立即抢购</a></td>
+				</tr>
+				<tr>
+					<td colspan='7' style="border:none;">
+						<p class="small-more">查看更多 小额理财 &gt;</p>
+					</td>
+				</tr>
+			</table> -->
+                <div id="htb" class="tabl">
+                    <ul class="clearafter ul-tab">
+                        <li class="pro-sy newyql">预期收益率</li>
+                        <li class="pro-name1 newymc">产品名称</li>
+                        <li class="tzqx rightdq">投资期限</li>
+                        <li class="sykt rightdq">剩余可投</li>
+                        <!-- <li class="xmje">项目金额</li>
+                        <li class="qtje">起投金额</li> -->
+                        <li class="cz rightdq">操作</li>
+                    </ul>
+                    <ul class="clearafter ul-pro-list">
+                        <li class="pro-sy">
+                            <div>
+                                <p class="yq">5.40%</p>
+                                <p class="jd">投资进度:9%</p>
+                                <p class="load2"><span></span></p>
+                                <p class="line2"></p>
+                            </div>
+                        </li>
+                        <li class="pro-name1">
+                            <p class="pro-name">话题宝524期-猜黄金<span>限猜单边</span></p>
+                        </li>
+                        <li class="tzqx">7天</li>
+                        <li class="sykt">1,626,000元</li>
+                        <li class="cz"><a href="">立即抢购</a></li>
+                    </ul>
+                    <ul class="clearafter ul-pro-list">
+                        <li class="pro-sy">
+                            <div>
+                                <p class="yq">5.40%</p>
+                                <p class="jd">投资进度:9%</p>
+                                <p class="load2"><span></span></p>
+                                <p class="line2"></p>
+                            </div>
+                        </li>
+                        <li class="pro-name1">
+                            <p class="pro-name">话题宝524期-猜黄金<span>限猜单边</span></p>
+                        </li>
+                        <li class="tzqx">7天</li>
+                        <li class="sykt">1,626,000元</li>
+                        <li class="cz"><a href="">立即抢购</a></li>
+                    </ul>
+                    <ul class="clearafter ul-pro-list">
+                        <li class="pro-sy">
+                            <div>
+                                <p class="yq">5.40%</p>
+                                <p class="jd">投资进度:9%</p>
+                                <p class="load2"><span></span></p>
+                                <p class="line2"></p>
+                            </div>
+                        </li>
+                        <li class="pro-name1">
+                            <p class="pro-name">话题宝524期-猜黄金<span>限猜单边</span></p>
+                        </li>
+                        <li class="tzqx">7天</li>
+                        <li class="sykt">1,626,000元</li>
+                        <li class="cz end"><a href="javascript:void(0)" disabled="disabled">已售罄</a></li>
+                    </ul>
+                    <p class="char-more"><a href=""><!-- <i></i> -->查看更多 话题宝&gt;</a></p>
+                </div>
+                <div id="kuaitou" class="tabl hidden">
+                    <ul class="clearafter ul-tab">
+                        <li class="pro-sy">预期年化收益</li>
+                        <li class="pro-name1">产品名称</li>
+                        <li class="tzqx">投资期限</li>
+                       <!--  <li class="sykt">剩余可投</li>
+                       <li class="xmje">项目金额</li> -->
+                        <li class="qtje">起投金额</li>
+                        <li class="cz">操作</li>
+                    </ul>
+                    <ul class="clearafter ul-pro-list">
+                        <li class="pro-sy">
+                            <div>
+                                <p class="yq">4.00%~5.80%</p>
+                                <!-- <p class="jd">投资进度:9%</p>
+                                <p class="load2"><span></span></p>
+                                <p class="line2"></p> -->
+                            </div>
+                        </li>
+                        <li class="pro-name1">
+                            <p class="pro-name">云财富-快投</p>
+                            <!-- <p class="pro-bm">B2-R7-20161206-002</p> -->
+                        </li>
+                        <li class="tzqx">随存随取</li>
+                        <!-- <li class="sykt">1,626,000元</li>
+                        <li class="xmje">1,626,000元</li> -->
+                        <li class="qtje">1,000元</li>
+                        <li class="cz"><a href="">立即抢购</a></li>
+                    </ul>
+                    <!-- <ul class="clearafter ul-pro-list">
+                        <li class="pro-sy">
+                            <div>
+                                <p class="yq">4.00%~5.80%</p>
+                                <p class="jd">投资进度:9%</p>
+                                <p class="load2"><span></span></p>
+                                <p class="line2"></p>
+                            </div>
+                        </li>
+                        <li class="pro-name1">
+                            <p class="pro-name">云财富-快投</p>
+                            <p class="pro-bm">B2-R7-20161206-002</p>
+                        </li>
+                        <li class="tzqx">随存随取</li>
+                        <li class="sykt">1,626,000元</li>
+                        <li class="xmje">1,626,000元</li>
+                        <li class="qtje">1,000元</li>
+                        <li class="cz"><a href="">立即抢购</a></li>
+                    </ul>
+                    <ul class="clearafter ul-pro-list">
+                        <li class="pro-sy">
+                            <div>
+                                <p class="yq">4.00%~5.80%</p>
+                                <p class="jd">投资进度:9%</p>
+                                <p class="load2"><span></span></p>
+                                <p class="line2"></p>
+                            </div>
+                        </li>
+                        <li class="pro-name1">
+                            <p class="pro-name">云财富-快投</p>
+                            <p class="pro-bm">B2-R7-20161206-002</p>
+                        </li>
+                        <li class="tzqx">随存随取</li>
+                        <li class="sykt">1,626,000元</li>
+                        <li class="xmje">1,626,000元</li>
+                        <li class="qtje">1,000元</li>
+                        <li class="cz end"><a href="javascript:void(0)" disabled="disabled">已售罄</a></li>
+                    </ul> -->
+                    <p class="char-more"><a href="">更多产品在来的路上.....<i></i></a></p>
+                </div>
+                <div id="small" class="tabl hidden">
+                    <ul class="clearafter ul-tab">
+                        <li class="pro-sy">预期收益率</li>
+                        <li class="pro-name1">产品名称</li>
+                        <li class="tzqx">投资期限</li>
+                        <li class="sykt">剩余可投</li>
+                        <li class="xmje">项目金额</li>
+                        <li class="qtje">起投金额</li>
+                        <li class="cz">操作</li>
+                    </ul>
+                    <ul class="clearafter ul-pro-list">
+                        <li class="pro-sy">
+                            <div>
+                                <p class="yq">5.40%</p>
+                                <p class="jd">投资进度:9%</p>
+                                <p class="load2"><span></span></p>
+                                <p class="line2"></p>
+                            </div>
+                        </li>
+                        <li class="pro-name1">
+                            <p class="pro-name">云财富 睿投<span>定期</span></p>
+                            <p class="pro-bm">B2-R7-20161206-002</p>
+                        </li>
+                        <li class="tzqx">7天</li>
+                        <li class="sykt">1,626,000元</li>
+                        <li class="xmje">1,626,000元</li>
+                        <li class="qtje">1,000元</li>
+                        <li class="cz"><a href="">立即抢购</a></li>
+                    </ul>
+                    <ul class="clearafter ul-pro-list">
+                        <li class="pro-sy">
+                            <div>
+                                <p class="yq">5.40%</p>
+                                <p class="jd">投资进度:9%</p>
+                                <p class="load2"><span></span></p>
+                                <p class="line2"></p>
+                            </div>
+                        </li>
+                        <li class="pro-name1">
+                            <p class="pro-name">云财富 睿投<span>定期</span></p>
+                            <p class="pro-bm">B2-R7-20161206-002</p>
+                        </li>
+                        <li class="tzqx">7天</li>
+                        <li class="sykt">1,626,000元</li>
+                        <li class="xmje">1,626,000元</li>
+                        <li class="qtje">1,000元</li>
+                        <li class="cz"><a href="">立即抢购</a></li>
+                    </ul>
+                    <ul class="clearafter ul-pro-list">
+                        <li class="pro-sy">
+                            <div>
+                                <p class="yq">5.40%</p>
+                                <p class="jd">投资进度:9%</p>
+                                <p class="load2"><span></span></p>
+                                <p class="line2"></p>
+                            </div>
+                        </li>
+                        <li class="pro-name1">
+                            <p class="pro-name">云财富 睿投<span>定期</span></p>
+                            <p class="pro-bm">B2-R7-20161206-002</p>
+                        </li>
+                        <li class="tzqx">7天</li>
+                        <li class="sykt">1,626,000元</li>
+                        <li class="xmje">1,626,000元</li>
+                        <li class="qtje">1,000元</li>
+                        <li class="cz end"><a href="javascript:void(0)" disabled="disabled">已售罄</a></li>
+                    </ul>
+                    <p class="char-more"><a href="">>查看更多 小额理财&gt;</a></p>
+                </div>
+                <div id="mont" class="tabl hidden">
+                    <ul class="clearafter ul-tab">
+                        <li class="pro-sy">预期收益率</li>
+                        <li class="pro-name1">产品名称</li>
+                        <li class="tzqx">投资期限</li>
+                        <!-- <li class="sykt">剩余可投</li> -->
+                        <li class="xmje">募集额度</li>
+                        <li class="qtje"> 最低投资金额</li>
+                        <li class="cz">操作</li>
+                    </ul>
+                    <ul class="clearafter ul-pro-list">
+                        <li class="pro-sy">
+                            <div>
+                                <p class="yq">7.40%</p>
+                                <p class="jd">投资进度:9%</p>
+                                <p class="load2"><span></span></p>
+                                <p class="line2"></p>
+                            </div>
+                        </li>
+                        <li class="pro-name1">
+                            <p class="pro-name">月月开花第70期</p>
+                            <p class="pro-bm">募集期：12月7日至12月8日</p>
+                        </li>
+                        <li class="tzqx">7天</li>
+                        <!-- <li class="sykt">1,626,000元</li> -->
+                        <li class="xmje">1,626,000元</li>
+                        <li class="qtje">1,000元</li>
+                        <li class="cz"><a href="">立即抢购</a></li>
+                    </ul>
+                    <ul class="clearafter ul-pro-list">
+                        <li class="pro-sy">
+                            <div>
+                                <p class="yq">5.40%</p>
+                                <p class="jd">投资进度:9%</p>
+                                <p class="load2"><span></span></p>
+                                <p class="line2"></p>
+                            </div>
+                        </li>
+                        <li class="pro-name1">
+                            <p class="pro-name">月月开花第70期</p>
+                            <p class="pro-bm">募集期：12月7日至12月8日</p>
+                        </li>
+                        <li class="tzqx">7天</li>
+                        <!-- <li class="sykt">1,626,000元</li> -->
+                        <li class="xmje">1,626,000元</li>
+                        <li class="qtje">1,000元</li>
+                        <li class="cz"><a href="">立即抢购</a></li>
+                    </ul>
+                    <ul class="clearafter ul-pro-list">
+                        <li class="pro-sy">
+                            <div>
+                                <p class="yq">5.40%</p>
+                                <p class="jd">投资进度:9%</p>
+                                <p class="load2"><span></span></p>
+                                <p class="line2"></p>
+                            </div>
+                        </li>
+                        <li class="pro-name1">
+                            <p class="pro-name">月月开花第70期</p>
+                            <p class="pro-bm">募集期：12月7日至12月8日</p>
+                        </li>
+                        <li class="tzqx">7天</li>
+                        <!-- <li class="sykt">1,626,000元</li> -->
+                        <li class="xmje">1,626,000元</li>
+                        <li class="qtje">1,000元</li>
+                        <li class="cz end"><a href="javascript:void(0)" disabled="disabled">已售罄</a></li>
+                    </ul>
+                    <p class="char-more"><a href=""><!-- <i></i> -->查看更多 月月开花&gt;</a></p>
+                </div>
+                <div id="antou" class="tabl hidden">
+                    <ul class="clearafter ul-tab">
+                        <li class="pro-sy">预期收益率</li>
+                        <li class="pro-name1">产品名称</li>
+                        <li class="tzqx">投资期限</li>
+                        <!-- <li class="sykt">剩余可投</li> -->
+                        <li class="xmje">项目金额</li>
+                        <li class="qtje">起投金额</li>
+                        <li class="cz">操作</li>
+                    </ul>
+                    <ul class="clearafter ul-pro-list">
+                        <li class="pro-sy">
+                            <div>
+                                <p class="yq">5.40%</p>
+                                <p class="jd">投资进度:9%</p>
+                                <p class="load2"><span></span></p>
+                                <p class="line2"></p>
+                            </div>
+                        </li>
+                        <li class="pro-name1">
+                            <p class="pro-name">安投-海股交狮桥融</p>
+                            <p class="pro-bm">B2-R7-20161206-002</p>
+                        </li>
+                        <li class="tzqx">7天</li>
+                        <!-- <li class="sykt">1,626,000元</li> -->
+                        <li class="xmje">1,626,000元</li>
+                        <li class="qtje">1,000元</li>
+                        <li class="cz"><a href="">立即抢购</a></li>
+                    </ul>
+                    <ul class="clearafter ul-pro-list">
+                        <li class="pro-sy">
+                            <div>
+                                <p class="yq">5.40%</p>
+                                <p class="jd">投资进度:9%</p>
+                                <p class="load2"><span></span></p>
+                                <p class="line2"></p>
+                            </div>
+                        </li>
+                        <li class="pro-name1">
+                            <p class="pro-name">安投-海股交狮桥融</p>
+                            <p class="pro-bm">B2-R7-20161206-002</p>
+                        </li>
+                        <li class="tzqx">7天</li>
+                        <!-- <li class="sykt">1,626,000元</li> -->
+                        <li class="xmje">1,626,000元</li>
+                        <li class="qtje">1,000元</li>
+                        <li class="cz"><a href="">立即抢购</a></li>
+                    </ul>
+                    <ul class="clearafter ul-pro-list">
+                        <li class="pro-sy">
+                            <div>
+                                <p class="yq">5.40%</p>
+                                <p class="jd">投资进度:9%</p>
+                                <p class="load2"><span></span></p>
+                                <p class="line2"></p>
+                            </div>
+                        </li>
+                        <li class="pro-name1">
+                            <p class="pro-name">安投-海股交狮桥融</p>
+                            <p class="pro-bm">B2-R7-20161206-002</p>
+                        </li>
+                        <li class="tzqx">7天</li>
+                        <!-- <li class="sykt">1,626,000元</li> -->
+                        <li class="xmje">1,626,000元</li>
+                        <li class="qtje">1,000元</li>
+                        <li class="cz end"><a href="javascript:void(0)" disabled="disabled">已售罄啦</a></li>
+                    </ul>
+                    <p class="char-more"><a href=""><!-- <i></i> -->查看更多 固定收益&gt;</a></p>
+                </div>
+            </div>
+        </div>
+        <!-- 公募基金部分 -->
+        <div class="pbulic">
+            <div class="title clearafter">
+                <i class="org"></i> 公募基金
+                <span><a href="">查看更多&gt;</a></span>
+            </div>
+            <div class="pub-tab">
+                <ul class="tab-list-top clearafter">
+                    <li class="new-jz newnewjz">最新净值</li>
+                    <li class="jjin-name newjjin">基金名称</li>
+                    <li class="week">近1周</li>
+                    <li class="mon">近1个月</li>
+                    <li class="thmon">近3个月</li>
+                    <li class="oyear">近1年</li>
+                    <li class="safe">风险(近1年标准差)</li>
+                    <li class="cont newcont">操作</li>
+                </ul>
+                <div class="pad0">
+                    <ul class="tab-list clearafter" style="background: rgb(255, 255, 255);">
+                        <li class="new-jz">
+                            <div>1.6270</div>
+                            <p>2016-12-06</p>
+                            <span class="line2"></span>
+                        </li>
+                        <li class="jjin-name">
+                            <p>南方策略优化<span>主推</span></p>
+                            <p class="jjin-bm">202019</p>
+                        </li>
+                        <li class="week down">-1.75%</li>
+                        <li class="mon up">0.31%</li>
+                        <li class="thmon up">4.86%</li>
+                        <li class="oyear up">15.88%</li>
+                        <li class="safe">15.88%</li>
+                        <li class="cont"><a href="">购买</a></li>
+                    </ul>
+                    <ul class="tab-list clearafter">
+                        <li class="new-jz">
+                            <div>1.6270</div>
+                            <p>2016-12-06</p>
+                            <span class="line2"></span>
+                        </li>
+                        <li class="jjin-name">
+                            <p>南方策略优化<span>主推</span></p>
+                            <p class="jjin-bm">202019</p>
+                        </li>
+                        <li class="week down">-1.75%</li>
+                        <li class="mon up">0.31%</li>
+                        <li class="thmon up">4.86%</li>
+                        <li class="oyear up">15.88%</li>
+                        <li class="safe">15.88%</li>
+                        <li class="cont"><a href="">购买</a></li>
+                    </ul>
+                    <ul class="tab-list last clearafter" style="background: rgb(255, 255, 255);">
+                        <li class="new-jz">
+                            <div>1.6270</div>
+                            <p>2016-12-06</p>
+                            <span class="line2"></span>
+                        </li>
+                        <li class="jjin-name">
+                            <p>南方策略优化<span>主推</span></p>
+                            <p class="jjin-bm">202019</p>
+                        </li>
+                        <li class="week down">-1.75%</li>
+                        <li class="mon up">0.31%</li>
+                        <li class="thmon up">4.86%</li>
+                        <li class="oyear up">15.88%</li>
+                        <li class="safe">15.88%</li>
+                        <li class="cont"><a href="">购买</a></li>
+                    </ul>
+                </div>    
+            </div>
+        </div>
+        <!-- 保险产品 -->
+        <div class="insure">
+            <div class="title clearafter">
+                <i class="ocean"></i> 保险产品
+                <span><a href="">查看更多&gt;</a></span>
+            </div>
+            <!-- 保险列表框 -->
+            <div class="insure-cont clearafter">
+                <div class="insure-l">
+                    <!-- <img src="https://act.bundwealth.com/upload/images/bwcus/bwindex-bx.jpg" alt="" /> -->
+                    <img src="<%=totalImg.LogoImg[0].pic_path%>" alt="<%=totalImg.LogoImg[0].note%>" />
+                    <p>关爱自己&nbsp;&nbsp;关爱家人</p>
+                </div>
+                <div class="insure-r">
+                    <ul class="insure-tab clearafter">
+                        <li>意外险</li>
+                        <li>人寿险</li>
+                        <li>健康险</li>
+                        <li class="acts">理财险</li>
+                    </ul>
+                    <div class="insure-pro clearafter ">
+                    <% totalImg.MoneyImg.forEach(function(item){%>
+                        <div class="pro-l">
+                            <!-- <p class="insure-pro-name">泰康E理财投连险</p>
+                            <p class="insure-discrib">双账户增值避险全囊括</p>
+                            <div class="rig-line">
+                                <p class="insure-sy">80.93%</p>
+                                <p class="insure-year">2015年涨幅</p>
+                                <a href="" class="insure-buy">立即抢购</a>
+                            </div> -->
+                            <img src="<%=item.pic_path%>" alt="<%=item.note%>">
+                            <a href="<%=item.link%>" class="insure-buy">立即抢购</a>
+                        </div>
+                    <%})%>
+                     <!--    <div class="pro-r">
+                            <p class="insure-pro-name">阳光人寿理财二号</p>
+                            <p class="insure-discrib">资金安全，同卡进出</p>
+                            <p class="insure-sy">5.20%</p>
+                            <p class="insure-year">历史年华结算利率</p>
+                            <a href="" class="insure-buy">立即抢购</a>
+                        </div> -->
+                    </div>
+                    <div class="insure-pro hidden clearafter health">
+                    <% totalImg.HealthImg.forEach(function(item){%>
+                        <div class="pro-l">
+                            <!-- <p class="insure-pro-name">泰康E理财投连险</p>
+                            <p class="insure-discrib">双账户增值避险全囊括</p>
+                            <div class="rig-line">
+                                <p class="insure-sy">80.93%</p>
+                                <p class="insure-year">2015年涨幅</p>
+                                <a href="" class="insure-buy">立即抢购</a>
+                            </div> -->
+                            <img src="<%=item.pic_path%>" alt="<%=item.note%>">
+                            <a href="<%=item.link%>" class="insure-buy">立即抢购</a>
+                        </div>
+                    <%})%>
+                        <!-- <div class="pro-l">
+                            <p class="insure-pro-name">阳光随e重疾</p>
+                            <p class="insure-discrib">双账户增值避险全囊括</p>
+                            <div class="rig-line">
+                                <p>投保灵活，保障、交费期间自由定制</p>
+                                <p>高额保障，保额可达<span>75万</span></p>
+                                <p class="last">价格透明，网销无佣金及附加费用，费率低</p>
+                                <a href="" class="insure-buy">立即抢购</a>
+                            </div>
+                        </div>
+                        <div class="pro-r">
+                            <p class="insure-pro-name">永安和睦医疗保险</p>
+                            <p class="insure-discrib">适用人群：0-59周岁 (含0，59周岁) 保障期间：1年</p>
+                            <p class="fz14">年度保障总额<span>1000万</span>，门诊住院同时覆盖</p>
+                            <p class="fz14">全面体验和睦家国际医疗水准</p>
+                            <p class="last fz14">指定全科医生，深度持续呵护您身心健康</p>
+                            <a href="" class="insure-buy">立即抢购</a>
+                        </div> -->
+                    </div>
+                    <div class="insure-pro hidden clearafter health">
+                    <% totalImg.PersonImg.forEach(function(item){%>
+                        <div class="pro-l">
+                            <!-- <p class="insure-pro-name">泰康E理财投连险</p>
+                            <p class="insure-discrib">双账户增值避险全囊括</p>
+                            <div class="rig-line">
+                                <p class="insure-sy">80.93%</p>
+                                <p class="insure-year">2015年涨幅</p>
+                                <a href="" class="insure-buy">立即抢购</a>
+                            </div> -->
+                            <img src="<%=item.pic_path%>" alt="<%=item.note%>">
+                            <a href="<%=item.link%>" class="insure-buy">立即抢购</a>
+                        </div>
+                    <%})%>
+                        <!-- <div class="pro-l">
+                            <p class="insure-pro-name">爱意传承C款终身寿险</p>
+                            <p class="insure-discrib">适用人群：0-55周岁 (含0，55周岁) 保障期间：终身</p>
+                            <div class="rig-line">
+                                <p>交费灵活，分期交费轻松累积财富</p>
+                                <p>流动性强，保单借款，资金运用灵活方便</p>
+                                <p class="last">保障灵活，出生就可投保，保障终身</p>
+                                <a href="" class="insure-buy">立即抢购</a>
+                            </div>
+                        </div>
+                        <div class="pro-r">
+                            <p class="insure-pro-name">保费试算</p>
+                            <input type="text" placeholder="保险份数"/>
+                            <input type="text" placeholder="被保人身份证号"/>
+                            <input type="text" placeholder="交费期间"/>
+                            <p class="bf"><span class="txt-l">保费</span><span class="txt-r">1,000.00元／年</span></p>
+                        </div> -->
+                    </div>
+                    <div class="insure-pro clearafter health hidden">
+                    <% totalImg.AccidentImg.forEach(function(item){%>
+                        <div class="pro-l">
+                            <!-- <p class="insure-pro-name">泰康E理财投连险</p>
+                            <p class="insure-discrib">双账户增值避险全囊括</p>
+                            <div class="rig-line">
+                                <p class="insure-sy">80.93%</p>
+                                <p class="insure-year">2015年涨幅</p>
+                                <a href="" class="insure-buy">立即抢购</a>
+                            </div> -->
+                            <img src="<%=item.pic_path%>" alt="<%=item.note%>">
+                            <a href="<%=item.link%>" class="insure-buy">立即抢购</a>
+                        </div>
+                    <%})%>
+                        <!-- <div class="pro-l">
+                            <p class="insure-pro-name">“飞常保”航意险</p>
+                            <p class="insure-discrib">适用人群：18-79周岁 (含18，79周岁) <br>保障期间：自领取之日起1年</p>
+                            <div class="rig-line">
+                                <div class="insure-ico clearafter">
+                                    <dl>
+                                        <dt class="ico-1"></dt>
+                                        <dd>免费赠送</dd>
+                                    </dl>
+                                    <dl class="marg">
+                                        <dt class="ico-2"></dt>
+                                        <dd>100万保额</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt class="ico-3"></dt>
+                                        <dd>全年无忧</dd>
+                                    </dl>
+                                </div>
+                                <a href="" class="insure-buy">立即抢购</a>
+                            </div>
+                        </div>
+                        <div class="pro-r">
+                            <p class="insure-pro-name">“铁定保”铁意险</p>
+                            <p class="insure-discrib">适用人群：18-79周岁 (含18，79周岁) <br>保障期间：自领取之日起1年</p>
+                            <div class="insure-ico clearafter">
+                                    <dl>
+                                        <dt class="ico-1"></dt>
+                                        <dd>免费赠送</dd>
+                                    </dl>
+                                    <dl class="marg">
+                                        <dt class="ico-4"></dt>
+                                        <dd>50万保额</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt class="ico-3"></dt>
+                                        <dd>全年无忧</dd>
+                                    </dl>
+                                </div>
+                            <a href="" class="insure-buy">立即抢购</a>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <!-- 保险三位一体 -->
+            <div class="insure-eg clearafter">
+                <%var i=1; totalImg.AdvertisementImg.forEach(function(item){%>
+                    <%if(i==1){%>
+                    <div class="eg1">
+                    <%}else if(i==2){%>
+                    <div class="eg2 bod">
+                    <%}else if(i==3){%>
+                    <div class="eg3">
+                    <%}%>
+                        <a href="<%=item.link%>">
+                            <div class="fix"></div>
+                            <img src="<%=item.pic_path%>" alt="<%=item.note%>">
+                        </a>
+                    </div>
+                <%i++;})%>
+                <!-- <div class="eg1">
+                    <div class="fix"></div>
+                    <h3>健康随e保癌症保障计划</h3>
+                    <p>适用人群：30天-50周岁 保障期间：可达100周岁</p>
+                    <p class="money"><span>33</span>元起</p>
+                </div>
+                <div class="eg2 bod">
+                    <div class="fix"></div>
+                    <h3>男性关爱特定疾病保险</h3>
+                    <p>适用人群：18-60周岁 (含18，60周岁) 保障期间：1年</p>
+                    <p class="money"><span>99</span>元起</p>
+                </div>
+                <div class="eg3">
+                    <div class="fix"></div>
+                    <h3>俪人守护A款防癌险</h3>
+                    <p>适用人群：18-55周岁 (含18，55周岁) 保障期间：1年</p>
+                    <p class="money"><span>5</span>元起</p>
+                </div> -->
+            </div>
+        </div>
+        <!-- 高端理财 -->
+        <div class="top-mon">
+            <div class="title clearafter">
+                <i class="org"></i> 高端理财
+            </div>
+            <div class="top-mon-cot clearafter">
+                <div class="top-mon-l">
+                    <h4>私募基金</h4>
+                    <p><img src="https://act.bundwealth.com/upload/images/bwcus/bw_smjj.png" alt="" />私募基金投资需承担各类风险，本金可能遭受损失。同时，私募基金投资还要考虑市场风险、信用风险、流动性风险、操作风险等各类投资风险。</p>
+                    <a href="">去答题</a>
+                </div>
+                <div class="top-mon-line"></div>
+                <div class="top-mon-l">
+                    <h4>资管产品</h4>
+                    <p><img src="https://act.bundwealth.com/upload/images/bwcus/bw_zgpro.png" alt="" />投金融资产不低于300万元或者最近三年个人年均收入不低于50万元的个人；或净资产不低于1000万元的单位；前款所称金融资产包括银行存款、股票、债券、基金份额、银行理财产品、信托计划、保险产品、期货权益等。</p>
+                    <a href="">去申购</a>
+                </div>
+            </div>
+        </div>
+        <!-- 资讯服务 -->
+        <div class="serve">
+            <div class="title clearafter">
+                <i class="org"></i> 资讯服务
+            </div>
+            <div class="serve-cot clearafter">
+                <div class="news">
+                    <h5>新闻动态<a href="">更多&gt;</a></h5>
+                    <div class="hot clearafter">
+                        <a href=""><img src="https://act.bundwealth.com/upload/images/bwcus/bwindex-news-hot.png" alt="" />
+                            <p>外滩云财富全年交易量突破100亿！</p>
+                        </a>
+                        <p class="data">11-08</p>
+                    </div>
+                    <div class="news-list">
+                        <p><a href=""><span class="tit-l">BW推出“投资导引” 资产配置飞入</span><span class="data">11-08</span></a></p>
+                        <p><a href=""><span class="tit-l">“金”喜回馈 “外星人”专享活动重</span><span class="data">11-08</span></a></p>
+                        <p><a href=""><span class="tit-l">外滩云财富：国庆理财三种姿势</span><span class="data">11-08</span></a></p>
+                        <p><a href=""><span class="tit-l">外滩云财富：国庆理财三种姿势</span><span class="data">11-08</span></a></p>
+                    </div>
+                </div>
+                <div class="chance bod">
+                    <h5>投资机会<a href="">更多</a></h5>
+                    <div class="hot clearafter">
+                        <a href=""><img src="https://act.bundwealth.com/upload/images/bwcus/bwindex-chance-hot.png" alt="" />
+                            <p>长假理财特刊三：小额理财不留闲钱</p>
+                        </a>
+                        <p class="data">11-08</p>
+                    </div>
+                    <div class="news-list">
+                        <p><a href=""><span class="tit-l">BW推出“投资导引” 资产配置飞入</span><span class="data">11-08</span></a></p>
+                        <p><a href=""><span class="tit-l">“金”喜回馈 “外星人”专享活动重</span><span class="data">11-08</span></a></p>
+                        <p><a href=""><span class="tit-l">外滩云财富：国庆理财三种姿势</span><span class="data">11-08</span></a></p>
+                        <p><a href=""><span class="tit-l">外滩云财富：国庆理财三种姿势</span><span class="data">11-08</span></a></p>
+                    </div>
+                </div>
+                <div class="how-do">
+                    <h5><a href="">怎样成为理顾？</a></h5>
+                    <div class="hot">
+                        <img src="https://act.bundwealth.com/upload/images/bwcus/bwindex-how.png" alt="" />
+                    </div>
+                    <p>想成为平台的理顾，需要有对金融理财产品的浓厚兴趣、对资产配置服务的高度了解以及有对投资人服务的极度热忱。同时，最好能拥有一定的客户资源，并愿意投身于财富管理行业。</p>
+                </div>
+            </div>
+        </div>
+        <!-- 合作机构 -->
+        <%if(totalImg.CooperationImg){%>
+        <div class="contact">
+            <div class="title clearafter">
+                <i class="org"></i> 合作机构
+                <!-- <span><a href="">查看更多&gt;</a></span> -->
+            </div>
+            <div class="contact-cot">
+                <div class="cont-l-box">
+                    <i class="cont-l"></i>
+                </div>
+                <div id="out-box">
+                    <div id="in-box" class="cota clearafter">
+                    
+                        <% totalImg.CooperationImg.forEach(function(item){%>
+                            <a href="<%=item.link%>" target="_blank"><img src="<%=item.pic_path%>" alt="<%=item.note%>"></a>
+                        <%})%>
+                    
+                    </div>
+                </div>
+                <div class="cont-r-box">
+                    <i class="cont-r"></i>
+                </div>
+            </div>
+        </div>
+        <%}%>
+    </div>
+<% include ../include/common_footer_slide %>
+<% if(haslogin=="done")  {%> 
+    <iframe src="https://www.bundtrade.cn/BundTrade/ssoUsrNm.action" style="display:none;" width="1px" height="1px"></iframe>
+<%}%> 
+
+</body>
+</html>

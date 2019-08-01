@@ -1,0 +1,415 @@
+.banner {
+    position: relative;
+    height: 350px;
+    background: url(https://act.bundwealth.com/upload/images/bwcus/new_dingq_bannerbg.jpg) no-repeat center top;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.banner_con {
+    display: block;
+    margin: 0 auto;
+    width: 1100px;
+    height: 350px;
+}
+
+.pro_tal {
+    width: 1100px;
+    padding: 20px 0;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-left: -550px;
+    color: #fff;
+    z-index: 2;
+}
+
+.pro_tab {
+    /*opacity: 0.2;*/
+    border-radius: 5px;
+    width: 266px;
+    float: left;
+    text-align: center;
+    padding: 22px 0;
+    margin-right: 12px;
+    position: relative;
+}
+
+.pro_tab div {
+    width: 266px;
+    height: 100%;
+    opacity: 0.2;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 5px;
+    z-index: 0;
+    transition: all .5s linear;
+}
+
+.last {
+    margin-right: 0;
+}
+
+.pro_tab .lab {
+    font-size: 16px;
+    color: #ffffff;
+    display: inline-block;
+    margin: 0 auto 4px;
+    position: relative;
+    z-index: -1;
+}
+
+.pro_tab .lab:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: -75px;
+    top: 10px;
+    height: 1px;
+    width: 64px;
+    background: #fff;
+}
+
+.pro_name {
+    font-size: 30px;
+    /*margin-bottom: 5px;*/
+}
+
+.pro_lab2 {
+    font-size: 12px;
+    margin-bottom: 23px;
+}
+
+.pro_lab3 {
+    margin-bottom: 30px;
+    font-size: 12px;
+}
+
+.nhsy {
+    margin-top: 1px;
+    font-size: 52px;
+}
+.nhsy span{
+    font-size: 26px;
+}
+.pro_tab a {
+    font-size: 20px;
+    width: 213px;
+    line-height: 46px;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, .5);
+    border-radius: 4px;
+    display: block;
+    margin: 0 auto;
+}
+
+.pro_tab .lab:after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: -75px;
+    top: 10px;
+    height: 1px;
+    width: 64px;
+    background: #fff;
+}
+
+.bg1 {
+    background-image: -webkit-linear-gradient(154deg, #ff8e52 0%, #f32b70 100%);
+    background-image: -o-linear-gradient(154deg, #ff8e52 0%, #f32b70 100%);
+    background-image: linear-gradient(154deg, #ff8e52 0%, #f32b70 100%);
+}
+
+.bg2 {
+    background-image: -webkit-linear-gradient(288deg, #ff7a00 0%, #f3b02b 100%);
+    background-image: -o-linear-gradient(288deg, #ff7a00 0%, #f3b02b 100%);
+    background-image: linear-gradient(2888deg, #ff7a00 0%, #f3b02b 100%);
+}
+
+.bg3 {
+    background-image: -webkit-linear-gradient(293deg, #5297ff 0%, #01bab4 100%);
+    background-image: -o-linear-gradient(293deg, #5297ff 0%, #01bab4 100%);
+    background-image: linear-gradient(293deg, #5297ff 0%, #01bab4 100%);
+}
+
+.bg4 {
+    background-image: -webkit-linear-gradient(64deg, #52acff 0%, #2b43f3 100%);
+    background-image: -o-linear-gradient(64deg, #52acff 0%, #2b43f3 100%);
+    background-image: linear-gradient(154deg, #52acff 0%, #2b43f3 100%);
+}
+
+a.hover1 {
+    background: #fff;
+    color: #f85662;
+}
+
+.pro_tab div.hover {
+    opacity: 0.8;
+    z-index: -1;
+    transition: all .5s linear
+}
+
+
+/*banner-end*/
+
+
+/*small-begin*/
+
+.wrap {
+    width: 1100px;
+    margin: 0 auto 150px;
+    padding-top: 24px;
+}
+
+.pro_list {
+    margin-bottom: 25px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .06);
+}
+
+.wrap h4 {
+    font-size: 20px;
+    color: #333;
+    padding-left: 15px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.wrap i {
+    position: absolute;
+    width: 5px;
+    height: 20px;
+    border-radius: 4px;
+    left: 0;
+    top: 5px;
+}
+
+i.red {
+    background: #fa665e;
+}
+i.blue{
+    background: #4d92d1;
+}
+i.yellow{
+    background: #ffb676;
+}
+i.pink{
+    background: #e58bb8;
+}
+a.more {
+    float: right;
+    font-size: 14px;
+    color: #adadad;
+}
+
+.pro_img {
+    float: left;
+    width: 263px;
+    height: 327px;
+    background: #FFA474;
+}
+
+.small_main {
+    width: 837px;
+    background: #fff;
+    height: 327px;
+}
+
+.small_tab {
+    padding-right: 30px;
+    border-bottom: 1px solid #E8E8E8;
+}
+
+.small_tab li {
+    float: right;
+    margin-left: 47px;
+    line-height: 42px;
+    color: #b9b9b9;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.small_tab li.act {
+    color: #a3856b;
+    border-bottom: 3px solid #a68970;
+}
+
+.pro {
+    padding-top: 23px;
+    padding-bottom: 23px;
+}
+
+.pro_content {
+    float: left;
+    width: 50%;
+    padding: 0 100px;
+    text-align: center;
+}
+
+.bod {
+    border-right: 1px solid #e8e8e8;
+}
+
+.pro_content .pro_name {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 21px;
+}
+
+.pro_sy {
+    font-size: 52px;
+    color: #ff7334;
+}
+.pro_sy span{
+    font-size: 26px;
+}
+
+a.buy {
+    border: 1px solid #c3ad9b;
+    border-radius: 4px;
+    width: 217px;
+    height: 44px;
+    display: block;
+    line-height: 44px;
+    color: #A07C60;
+}
+.pro_tab a.buy:hover{
+    background: #fff;
+    color: #A07C60;
+}
+.wrap a.buy:hover{
+    background: linear-gradient(-180deg, #ceb495 0%, #a68970 100%);
+    color: #fff;
+}
+.labl,
+.labr {
+    color: #b9b9b9;
+    font-size: 14px;
+    margin: 5px 0 23px;
+}
+
+
+/*month-flower-begin*/
+
+i.puple {
+    background: #966bd7;
+}
+
+.month_main {
+    height: 327px;
+    background: #fff;
+    padding-top: 35px;
+    padding-left: 50px;
+    width: 837px;
+}
+
+.pro_dis {
+    width: 341px;
+}
+
+.mont_name {
+    margin-bottom: 5px;
+    font-size: 22px;
+    color: #333;
+}
+
+.mj_date {
+    font-size: 12px;
+    color: #979797;
+    margin-bottom: 50px;
+}
+
+.discrib1 {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 17px;
+}
+
+.mj_type {
+    font-size: 12px;
+    color: #979797;
+    padding-top: 15px;
+    border-top: 1px solid #e5e5e5;
+    margin-top: 43px;
+}
+
+.mid {
+    max-width: 110px;
+    margin: 0 auto;
+}
+
+.pro_info {
+    padding: 18px 28px 0;
+}
+
+.line_gry {
+    background: #f0f0f0;
+    border-radius: 100px;
+    width: 360px;
+    height: 8px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.line_al {
+    background: #a68970;
+    border-radius: 100px;
+    width: 200px;
+    height: 8px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.mj_jd {
+    font-size: 12px;
+    color: #979797;
+}
+
+.label {
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.pro_bod {
+    position: relative;
+    padding: 0 72px;
+    text-align: center;
+    color: #979797;
+}
+
+.pro_sy {
+    margin: 30px 0 15px;
+}
+
+.line-cen {
+    width: 1px;
+    height: 163px;
+    background: #e5e5e5;
+    position: absolute;
+    left: -28px;
+    top: 20px;
+}
+
+.pat {
+    padding-top: 52px;
+}
+
+.pat .pro_sy {
+    margin-bottom: 8px;
+    margin-top: 10px;
+}
+
+.pat .label {
+    margin-bottom: 60px;
+}
+
+.pat .line-cen {
+    top: 40px;
+}

@@ -1,0 +1,117 @@
+<!-- footer -->
+<div class="footer">
+    <div class="footer-cot">
+        <div class="footer-top clear">
+            <ul>
+                <li><a href=""><p>关于我们</p></a></li>
+                <li><a href="">公司简介</a></li>
+                <li><a href="">主要股东</a></li>
+                <li><a href="">公司地址</a></li>
+                <li><a href="">加入我们</a></li>
+                <li><a href="">安全保障</a></li>
+            </ul>
+            <ul>
+                <li><a href=""><p>帮助中心</p></a></li>
+                <li><a href="">注册绑卡</a></li>
+                <li><a href="">账户安全</a></li>
+                <li><a href="">投资操作</a></li>
+                <li><a href="">网站地图</a></li>
+                <li><a href="">新手指南</a></li>
+            </ul>
+            <div class="tech clearafter">
+                <p>关注我们</p>
+                <dl class="dow-a">
+                    <dt><i class="down-img"></i></dt>
+                    <dd><a href="">下载APP</a></dd>
+                    <div class="app-ewm hidden">
+                        <p class="app-dow"></p>
+                    </div>
+                </dl>
+                <dl class="dow-w">
+                    <dt><i class="wx-img"></i></dt>
+                    <dd><a href="">微信公众号</a></dd>
+                    <div class="wx-ewm hidden">
+                        <p class="wx-dow"></p>
+                    </div>
+                </dl>
+                <dl class="dl-last dow-s">
+                    <dt><i class="sina-img"></i></dt>
+                    <dd><a href="">微博公众号</a></dd>
+                    <div class="sina-ewm hidden">
+                        <p class="sina-dow"></p>
+                     </div>
+                 </dl>
+            </div>
+            <div class="locat">
+                <p class="locat-us">联系我们</p>
+                <p class="phone">400-833-3073</p>
+                <p class="gdp">021-33323920-6416</p>
+                <p class="work">9:00-21:00(国定假日除外)</p>
+                <p class="mail">services@bundwealth.com</p>
+                <p class="work">9:00-21:00(国定假日除外)</p>
+                            </div>
+        </div>
+        <p class="copy">上海外滩云财金融服务有限公司 BundWealth.com&nbsp;&copy;版权所有&nbsp;All rights reserved.沪ICP备 15035637号-2</p>
+        <p class="copy-info">市场有风险，投资须谨慎</p>
+    </div>
+</div>
+<!-- footer end -->
+<!-- slide -->
+<div class="fl sidebar">
+    <div class="fl_qq" onclick="ysf.open(); return false;"></div>
+    <div class="fl_er"></div>
+                                <a target="_blank" href="https://www.bundwealth.com/BundTrade/cus.cus.question.cusquesBack.action" ><div class="fl_fb"></div></a>
+    <div class="fl_back"></div>
+    <div class="fl_hover_wrap">
+        <div class="fl_hover fl_hover_wx">
+            <i class="fl_hover_wxico"></i>
+            <span>关注微信公众账号</span>
+        </div>  
+    </div>
+</div>
+<!-- slide end -->
+
+<script type="text/javascript" src="js/lib/jquery1.9/jquery-1.9.1.js"></script>
+
+<!--七鱼-->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/json3/3.3.2/json3.min.js"></script>
+<script src="https://qiyukf.com/script/9e19c44d097f6817cde479cd6b9e94e2.js"></script>
+<script>  
+var user_Name = '<%=cus_name %>';
+var cusCode = '<%=cus_code %>';
+var desCusCode = '<%=cus_code_des %>';
+var gender = '<%=gender %>';
+var haslogin='<%=haslogin %>';    
+(function(){ 
+              
+    ysf.logoff();//登出
+    if(user_Name!='null'&&user_Name!=''){            
+            if(user_Name==cusCode){//表示没有进行实名认证
+                user_Name='未实名';
+            }else if(user_Name.substring(0,1)=="1"){
+                user_Name='未实名';
+            }  
+            else{
+                if(gender!='null'&&gender!=''){
+                    user_Name = user_Name + '_' + gender;
+                }else{
+                    user_Name = user_Name + '_先生';
+                }
+            }
+            ysf.config({
+                "uid":desCusCode,
+                "data":JSON.stringify([
+                    {"key":"real_name", "value":user_Name},
+                    {"key":"mobile_phone", "hidden":true},
+                    {"key":"email", "hidden":true},
+                    {"index":0, "key":"account", "label":"账号", "value":desCusCode},
+                ])
+            }); 
+        }
+    })()
+    $("#YSF-BTN-HOLDER").remove();
+</script>
+<script type="text/javascript" src="js/lib/jquery.hoverdelay.js"></script>
+<script type="text/javascript" src="js/bwPcIndex/bwindex.js"></script>
+<script type="text/javascript" src="js/lib/commonhead_footer.js"></script>
+<!--end-->

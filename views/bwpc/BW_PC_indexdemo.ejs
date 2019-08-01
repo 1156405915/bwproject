@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>首页</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="css/lib/normalize.css?v=1476856921224">
+    <link rel="stylesheet" type="text/css" href="css/bw-app/base.css?v=1476856921224">
+    <link rel="stylesheet" type="text/css" href="css/bw-app/BW_app_faq.css?v=1476856921224">
+    <!--[if lt IE 9]>
+    <script src="../lib/js/html5shiv.min.js?v=1476856921224"></script>
+    <script src="../lib/js/respond.min.js?v=1476856921224"></script>
+    <![endif]-->
+</head>
+
+
+<body>
+    大声说出我是谁：
+    <br>
+    <%=cus_name%>
+    <br>
+    <%=cus_idn%>
+    <br>
+    <%=cus_type%>
+    <br>
+    <%=brancode%>
+    <br>
+    <%=qualified_investor%>
+    <br>
+    <%=cus_mphone%>
+    <br>
+    <%=cus_code%>
+    <br>
+    <button class="login">登陆</button>
+    <button class="logout">登出</button>
+
+    <div>
+    sdfdf
+            </div>
+
+</body>
+
+<script type="text/javascript" src="../js/lib/jquery-2.1.4/jquery-2.1.4.js?v=1476856921224"></script>
+<script type="text/javascript" src="../js/lib/jquery-2.1.4/jquery.tap.js?v=1476856921224"></script>
+<script>
+    $(".login").on("click",function(e){
+        e.preventDefault();
+        window.location.href="/login"
+    })
+    $(".logout").on("click",function(e){
+        e.preventDefault();
+        window.location.href="cas/logout"
+    })
+</script>
+</html>

@@ -1,0 +1,112 @@
+<!-- header -->
+<div class="header">
+        <div class="head-top clearafter">
+            <div class="head-l clearafter">
+                <a target="_blank" href="https://www.bundwealth.com/bweb/html/zx/gywm_index.html">关于我们</a>
+                <a target="_blank" href="https://www.bundwealth.com/BundTradeBran/adm.login.ifaLogin.action?bran_key=B7310020">机构及理财顾问平台</a>
+                <a target="_blank" href="http://www.bundcollege.com/faq/list.aspx">常见问题</a>
+                <a target="_blank" href="https://www.bundwealth.com/BundTrade/cus.cus.activity.activity.action?liveFlag=0">全部活动</a>
+            </div>
+            <ul class="tips clearafter">
+                <li class="kefu"><i></i>400-833-3073</li>
+                <li class="qq" onclick="ysf.open(); return false;"><i></i>七鱼在线客服</li>
+                <li class="sina">
+                    <i></i>微博
+                    <div class="head-sina">
+                        <b></b>
+                    </div>
+                </li>
+                <li class="weixin">
+                    <i></i>公众号
+                    <div class="wx-pub">
+                        <b></b>
+                    </div>
+                </li>
+                <li class="soft">
+                    <i></i>下载APP
+                    <div class="app-pic">
+                        <b></b>
+                    </div>
+                </li>
+            </ul>
+            <div class="login clearafter">
+                 <% if(haslogin=="done")  {%> 
+                    <span>您好,<%= cus_name %></span>
+                    <%}else{%>
+                    <a href="/login">登录</a>
+                    <a target="_blank" href="<%=project_url%>/BundTrade/adm.login.register.action">注册</a>
+                <%}%>
+            </div>
+        </div>
+        <div class="head-nav">
+            <div class="head-con clearafter">
+                <a href="" class="bw-logo">
+                    <img src="https://act.bundwealth.com/upload/images/bwcus/bwindex-logo.png" alt="" />
+                </a>
+                <div class="navb clearafter">
+                    <li class="activ"><a id="menu0" href="<%=project_url%>?activeMenu=menu0">首页</a></li>
+                    <li><a id="menu1" href="<%=project_url%>/currentdeposit?activeMenu=menu1">活期</a></li>
+                    <li><a id="menu2" href="<%=project_url%>/timedeposit?activeMenu=menu2">定期</a></li>
+                    <li><a id="menu3" href="<%=project_url%>/insurance?activeMenu=menu3">保险</a></li>
+                    <li><a id="menu4" href="<%=project_url%>/mutualfunds?activeMenu=menu4">公募基金</a></li>
+                    <li><a id="menu5" href="<%=project_url%>/privatebanking?activeMenu=menu5">高端理财</a></li>
+                    <li><a id="menu7" href="<%=project_url%>/newbiezone?activeMenu=menu7">新手专享</a></li>
+                    <li><a id="menu6" href="<%=project_url%>/transferzone?activeMenu=menu6">转让专区</a></li>
+                    <span class="line"></span>
+                </div>
+                <div class="my-pro">
+                    我的账户
+                    <i class="arrow arrow-down"></i>
+                    <div class="list">
+                    <% if(haslogin=="done")  {%> 
+                        <div class="perloading">
+                            <div class="loader"></div>
+                        </div>
+                        <div class="al-login">
+                            <div class="list-top">
+                                <i class="user-head"></i>
+                                <div class="user">
+                                    <p class="clearafter"><span class="user-name"></span><i class="zs"></i></p>
+                                    <p class="tzq">投资券 <span class="ticket-num">3</span> 张&nbsp;可用<i class="char">查看</i></p>
+                                </div>
+                            </div>
+                            <div class="list-mid clearafter">
+                                <ul class="list-l">
+                                    <li>总资产</li>
+                                    <li>可用余额</li>
+                                    <li>我的积分</li>
+                                </ul>
+                                <ul class="user-zc">
+                                    <li class="total-mon"><span class="total-mon-text">30,00,000.00</span><i class="eye"></i></li>
+                                    <li class="total-use"><span class="total-use-text">0.00元</span></li>
+                                    <li>30,000.00</li>
+                                </ul>
+                                <ul class="user-act">
+                                    <li class="first"><a class="menuxhref" href="https://www.bundtrade.cn?activeMenu=menux"><!-- Modify liuzhuan -->资产详情</a></li>
+                                    <li><a class="menuxhref" href="https://www.bundtrade.cn?activeMenu=menux">充值</a><a class="menuxhref" href="https://www.bundtrade.cn?activeMenu=menux" class="user-qx">取现</a></li>
+                                    <li><a href=""></a></li>
+                                </ul>
+                                <p class="two-list"><span class="bor"><i></i><a class="menuxhref" href="https://www.bundtrade.cn?activeMenu=menux">资金记录</a></span><span><i></i><a class="menuxhref" href="https://www.bundtrade.cn?activeMenu=menux">我的奖励</a></span></p>
+                                <p class="log-out"><a href="/cas/logout">退出登录</a></p>
+                            </div>
+                        </div>
+                        <%}else{%>
+                        <div class="no-login">
+                            <div class="list-top">
+                                <i class="user-head"></i>
+                                <div class="user">
+                                    <p class="hello">Hi，欢迎来到外滩云财富 ^_^</p>
+                                    <p class="tips-info">您目前还未登录~</p>
+                                </div>
+                            </div>
+                            <h3><a class="btn1 abtn">登录</a><a class="btn1-reg abtn">注册</a>
+                                <p class="los">忘记密码?</p>
+                            </h3>
+                        </div>
+                        <%}%>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- header end -->

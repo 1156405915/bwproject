@@ -1,0 +1,3624 @@
+@charset "UTF-8";
+
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2015-05-28 14:59:13
+ * @version $Id$
+ */
+
+* {
+    font-family: "Microsoft YaHei", "Tahoma", Helvetica, Arial, sans-serif;
+    list-style-type: none;
+    font-style: normal;
+    /*transition: background-color 0.3s,color 0.3s;
+	-moz-transition: background-color 0.3s;	/* Firefox 4 */
+    /*-webkit-transition: background-color 0.3s;	 Safari 和 Chrome 
+	-o-transition: background-color 0.3s;*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: normal !important;
+}
+
+img {
+    border: 0;
+}
+
+li {
+    list-style: none;
+}
+
+ol,
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.Tahoma {
+    font-family: Tahoma !important;
+}
+
+.orange {
+    color: #ff9c00 !important;
+}
+
+input,
+button,
+select,
+textarea {
+    outline: none
+}
+
+textarea {
+    resize: none
+}
+
+input[type="file"] {
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.family1 {
+    font-family: Tahoma !important;
+}
+
+.family2 {
+    font-family: "宋体" !important;
+}
+
+.both {
+    float: inherit !important;
+}
+
+::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: #bebebe;
+    font-size: 16px;
+}
+
+:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #bebebe;
+    font-size: 16px;
+}
+
+::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #bebebe;
+    font-size: 16px;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: #fff !important;
+    font-size: 16px !important;
+}
+
+html,
+body {
+    width: 100%;
+    background: #fff;
+    min-height: 100%;
+}
+
+html {
+    height: auto;
+    position: relative;
+    min-height: 100%;
+    overflow-y: scroll;
+}
+
+body a {
+    outline: none;
+    blr: expression(this.onFocus=this.blur());
+    cursor: pointer;
+    /* color:#3dabf0 */
+    ;
+}
+
+body #bigLogo,
+.go_home {
+    cursor: default !important;
+}
+
+.bor_bottom {
+    border-bottom: 1px solid #f4f4f4;
+}
+
+.placeholder {
+    color: #bebebe !important;
+    font-size: 16px !important;
+}
+
+
+/*返回顶部*/
+
+#scroolTop {
+    position: fixed;
+    width: 42px;
+    bottom: 279px;
+    right: 50%;
+    border: 1px solid #ecd1b5;
+    border-bottom: 0px;
+    margin-right: -610px;
+    display: none;
+}
+
+#scroolTop a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-bottom: 1px solid #ecd1b5;
+    background: #fffbea;
+}
+
+#scroolTop a:hover {
+    background-color: #876037;
+}
+
+#scroolTop .a1 {
+    background-position: 0 -374px;
+}
+
+#scroolTop .a2 {
+    background-position: 0 -414px;
+    word-wrap: break-word;
+    word-break: normal;
+    text-align: center;
+    line-height: 14px;
+    padding-top: 8px;
+    text-indent: -999999px;
+}
+
+#scroolTop .a2:hover {
+    color: #ecd1b5;
+    background: #876037 !important;
+    text-indent: 0px;
+}
+
+#scroolTop .a3 {
+    background-position: 0 -454px;
+}
+
+
+/* 新css/newindex */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background: #f3f3f3 !important;
+}
+
+.flexslider {
+    height: 352px;
+}
+
+.clearafter:after {
+    content: '';
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+.login_con {
+    width: 288px;
+    background: rgba(0, 0, 0, .7);
+    filter: opacity(80);
+    border-radius: 5px;
+    position: absolute;
+    right: 0;
+    top: 24px;
+    padding-bottom: 3px;
+}
+
+.login_con h3 {
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+    height: 58px;
+    padding-top: 12px;
+    padding-bottom: 5px;
+    overflow: hidden;
+    /* background: url(../../images/bw-cus/index_slogan_w.png) no-repeat 10px 15px;
+	background-size: 250px; */
+}
+
+.login_con h3 img {
+    width: 78%;
+    position: relative;
+    left: 3px;
+}
+
+.list {
+    position: relative;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 19px;
+    opacity: 0;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    visibility: hidden;
+}
+
+.list_mid {
+    position: relative;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.userCenter-hover .list {
+    visibility: visible;
+    opacity: 1;
+}
+
+.login_con p.list_mid:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 39px;
+    width: 45px;
+    height: 2px;
+    background: rgba(255, 255, 255, .21);
+    top: 11px;
+}
+
+.login_con p.list_mid:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 211px;
+    width: 45px;
+    height: 2px;
+    background: rgba(255, 255, 255, .21);
+    top: 11px;
+}
+
+.login_con p {
+    text-align: center;
+}
+
+.plat {
+    color: #cacaca;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.log-out {
+    font-size: 14px;
+    line-height: 40px;
+    width: 266px;
+    text-align: center;
+    border-top: 1px solid #f0f0f0;
+    margin: 0 auto;
+    color: #A08167;
+}
+
+.log-out a {
+    display: block;
+    width: 100%;
+    height: 40px;
+    color: #A08167;
+}
+
+.two-list {
+    font-size: 14px;
+    color: #A08167;
+    width: 266px;
+    margin: 0 auto 10px;
+}
+
+.two-list span {
+    width: 133px;
+    display: inline-block;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.two-list span a {
+    color: #A08167;
+}
+
+.two-list span.bor {
+    border-right: 1px solid #f0f0f0;
+}
+
+.two-list span i {
+    display: block;
+    width: 20px;
+    height: 20px;
+    float: left;
+    background: url(https://act.bundwealth.com/upload/images/bwcus/bwindexsp2.png) no-repeat;
+    /* background: url(../../images/bw-cus/bwindexsp2.png) no-repeat; */
+    background-position: -84px -446px;
+    margin: 5px 5px 0 25px;
+}
+
+.two-list span.bor i {
+    background-position: -84px -419px;
+}
+
+.los {
+    font-size: 14px;
+    line-height: 40px;
+    width: 266px;
+    text-align: center;
+    border-top: 1px solid #f0f0f0;
+    margin: 20px auto 0;
+    color: #A08167;
+}
+
+.hello {
+    font-size: 12px;
+    color: #D9C1AB;
+    text-align: left;
+}
+
+.tips-info {
+    font-size: 18px;
+    color: #fff;
+    text-align: left;
+}
+
+.no-login .list-top {
+    padding-bottom: 10px;
+}
+
+.list .no-login h3 {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.zh {
+    font-size: 14px;
+    color: #fff;
+    margin-top: 8px;
+    text-align: center;
+}
+
+.zh a {
+    font-size: 14px;
+    color: #fff;
+    text-decoration: underline !important;
+}
+
+.login_bg {
+    display: block;
+    width: 210px;
+    margin: 20px auto 0;
+    height: 84px;
+    background: url(https://act.bundwealth.com/upload/images/bwcus/bwindexsp2.png) no-repeat;
+    background-position: 4px 0;
+}
+
+.login_bg2 {
+    display: block;
+    width: 210px;
+    height: 84px;
+    background: url(https://act.bundwealth.com/upload/images/bwcus/bwindexsp2.png) no-repeat;
+    margin: 11px auto 0;
+    background-position: 4px 0;
+}
+
+.login_con>a {
+    display: block;
+    margin: 0 auto;
+    width: 214px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    box-shadow: 0 2px 0 0 #42362C;
+    background: linear-gradient(-180deg, #bd9f84 0%, #917257 100%);
+    background: -moz-linear-gradient(top, #bd9f84, #917257 100%);
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#bd9f84), to(#917257 100%));
+    background: -o-linear-gradient(top, #bd9f84, #917257 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#bd9f84', endColorstr='#917257', GradientType=0);
+}
+
+.wrap {
+    width: 1100px;
+    margin: 23px auto 0;
+}
+
+.list-wrap {
+    background: #fff;
+}
+
+.list-type {
+    height: 85px;
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.list-con {
+    width: 275px;
+    float: left;
+    height: 85px;
+}
+
+.list-con img {
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+    float: left;
+    margin-top: 20px;
+    /* background: url(https://act.bundwealth.com/upload/images/bwcus/bwindexsp2.png) no-repeat; */
+}
+
+.list-one i {
+    background-position: -138px -85px;
+}
+
+.list-two i {
+    background-position: -138px -137px;
+}
+
+.list-thr i {
+    background-position: -138px -191px;
+}
+
+.list-for i {
+    background-position: -138px -247px;
+}
+
+.list-con h3 {
+    font-size: 22px;
+    padding-left: 59px;
+    padding-top: 18px;
+}
+
+.list-con h3 a {
+    color: #a68970;
+}
+
+.list-con p {
+    font-size: 12px;
+    color: #979797;
+    padding-left: 59px;
+}
+
+.bw-gonggao {
+    padding: 0 0 0px 30px;
+    position: relative;
+}
+
+.bw-gonggao li {
+    float: left;
+    font-size: 16px;
+    color: #686868;
+    list-style: decimal;
+    list-style-position: inside;
+    width: 240px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.gb-ico {
+    position: absolute;
+    display: block;
+    width: 25px;
+    height: 22px;
+    left: 0;
+    top: 2px;
+    background: url(https://act.bundwealth.com/upload/images/bwcus/bwindexsp2.png) no-repeat;
+    /* background: url(../../images/bw-cus/bwindexsp2.png) no-repeat; */
+    background-position: -85px -393px;
+}
+
+.hot-con {
+    width: 358px;
+    height: 178px;
+    float: left;
+    text-align: center;
+    font-size: 22px;
+    color: #666;
+    line-height: 178px;
+    background: #fff;
+}
+
+.marz12 {
+    margin: 0 12px;
+}
+
+.hotp {
+    margin-bottom: 20px;
+}
+
+.title i {
+    border-radius: 4px;
+    width: 5px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 10px;
+    position: relative;
+    top: 2px;
+}
+
+.title {
+    color: #333;
+    font-size: 20px;
+}
+
+.title i.org {
+    background: #ff7334;
+}
+
+.title span {
+    float: right;
+    font-size: 16px;
+}
+
+.title span a {
+    color: #979797;
+}
+
+
+/*话题宝部分*/
+
+.htb-con {
+    background: #fff;
+    padding: 22px 20px 22px;
+}
+
+.pro-list {
+    border: 1px solid #e5e5e5;
+    width: 249px;
+    text-align: center;
+    padding-bottom: 20px;
+    margin-right: 20px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    transition: all .25s linear;
+}
+
+.act {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .20);
+    transition: all .25s linear;
+}
+
+span.ticket {
+    font-size: 10px;
+    color: #fff;
+    background: #ff6a66;
+    display: block;
+    position: absolute;
+    width: 80px;
+    height: 20px;
+    right: -22px;
+    top: 12px;
+    text-align: center;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+}
+
+.htb-con div.pro-last {
+    margin-right: 0;
+}
+
+.ul-tab {
+    /*border-bottom: 1px solid #e6e6e6;*/
+    background: #f9f9f9;
+}
+
+.ul-pro-list {
+    border-bottom: 1px solid #f6f6f6;
+    padding-left: 16px;
+}
+
+.pro-sy {
+    width: 227px;
+}
+
+#htb .pro-name1 {
+    width: 307px;
+}
+
+#htb .pro-sy {
+    width: 237px;
+}
+
+#htb .tzqx {
+    width: 170px;
+}
+
+#htb .sykt {
+    width: 170px;
+}
+
+#htb .cz {
+    width: 200px;
+}
+
+#kuaitou .pro-sy {
+    width: 237px;
+}
+
+#kuaitou .pro-name1 {
+    width: 227px;
+}
+
+#kuaitou .tzqx {
+    width: 210px;
+}
+
+#kuaitou .qtje {
+    width: 210px;
+}
+
+#kuaitou .cz {
+    width: 200px;
+}
+
+#mont .pro-sy {
+    width: 227px;
+}
+
+#mont .pro-name1 {
+    width: 220px;
+}
+
+#mont .tzqx {
+    width: 137px;
+}
+
+#mont .xmje {
+    width: 160px;
+}
+
+#mont .qtje {
+    width: 140px;
+}
+
+#mont .cz {
+    width: 200px;
+}
+
+#antou .pro-sy {
+    width: 227px;
+}
+
+#antou .pro-name1 {
+    width: 220px;
+}
+
+#antou .tzqx {
+    width: 137px;
+    text-align: right;
+}
+
+#antou .xmje {
+    width: 160px;
+    text-align: right;
+}
+
+#antou .qtje {
+    width: 140px;
+    text-align: right;
+}
+
+#antou .cz {
+    width: 200px;
+    text-align: right;
+    padding-right: 42px;
+}
+
+.pro-name1 {
+    width: 193px;
+    height: 112px;
+}
+
+.tzqx {
+    width: 75px;
+    text-align: center;
+    height: 112px;
+    line-height: 112px;
+}
+
+.sykt {
+    width: 130px;
+    text-align: center;
+    height: 112px;
+    line-height: 112px;
+}
+
+.xmje {
+    width: 135px;
+    text-align: center;
+    height: 112px;
+    line-height: 112px;
+}
+
+.qtje {
+    width: 124px;
+    text-align: center;
+    height: 112px;
+    line-height: 112px;
+}
+
+.cz {
+    width: 200px;
+    height: 112px;
+    line-height: 112px;
+}
+
+.cz a {
+    display: block;
+    margin: 37px auto;
+    font-size: 16px;
+    color: #ff6f00 !important;
+    text-align: center;
+    line-height: 38px;
+    width: 120px;
+    height: 38px;
+    border: 1px solid #ff6f00;
+    border-radius: 4px;
+}
+
+.pad00 li {
+    float: left;
+}
+
+.ul-pro-list div {
+    padding-bottom: 15px;
+    position: relative;
+}
+
+p.name {
+    font-size: 20px;
+    color: #333;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+.ul-tab li {
+    height: 47px;
+    line-height: 47px;
+    color: #999;
+    font-size: 14px;
+    text-align: center;
+    font-weight: normal;
+}
+
+.cot {
+    text-align: center;
+    height: 20px;
+}
+
+.cot span {
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    color: #ff6a66;
+    border-radius: 999px;
+    border: 1px solid #ff6a66;
+    margin-right: 6px;
+    padding: 1px 9px;
+}
+
+p.syl {
+    font-size: 46px;
+    color: #ff7334;
+}
+
+p.syl span {
+    font-size: 24px;
+}
+
+p.ally {
+    margin-top: 10px;
+    margin-bottom: 12px;
+    color: #9b9b9b;
+}
+
+.type {
+    position: relative;
+}
+
+.type .line {
+    margin-left: -1px;
+    position: absolute;
+    left: 50%;
+    width: 1px;
+    height: 25px;
+    top: 15px;
+    border-left: 1px solid #dcdcdc;
+}
+
+.typ-l {
+    float: left;
+    width: 50%;
+}
+
+.typ-l span.org {
+    color: #ff7334;
+}
+
+.typ-l p.tz,
+.typ-l p.qt {
+    color: #9b9b9b;
+}
+
+.gry {
+    background: #e2e2e2;
+    border-radius: 100px;
+    width: 100px;
+    height: 6px;
+    float: left;
+    margin-top: 7px;
+}
+
+div.org {
+    background: #ff7334;
+    border-radius: 100px;
+    height: 6px;
+    width: 20px;
+}
+
+.load {
+    padding: 0 47px;
+    margin: 16px 0;
+    height: 21px;
+}
+
+.load-num {
+    float: right;
+}
+
+.pro-list a {
+    position: relative;
+    display: block;
+    width: 170px;
+    line-height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    background: #ff7334;
+    margin: 0 auto;
+    border-radius: 4px;
+    z-index: 0;
+}
+
+
+/*.pro-list a:hover {
+    background: #DE6B37;
+}*/
+
+.pro-list a:focus:before,
+.pro-list a:hover:before {
+    opacity: 1;
+    transition: transform .2s ease-in, opacity .2s ease-in;
+    transform: scaleX(1);
+}
+
+.pro-list a:hover {
+    /*border: 1px solid #ff7334;*/
+    /*color: #ff7334;*/
+    /*background: #fff;*/
+}
+
+.pro-list a:before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #FF8F5C;
+    content: '';
+    opacity: 0;
+    transition: transform .15s ease-out, opacity .15s ease-out;
+    z-index: -1;
+    transform: scaleX(0);
+    border-radius: 4px;
+}
+
+.huoqi p.pro-last {
+    margin-bottom: 0;
+}
+
+div.htb,
+.pro {
+    margin-bottom: 20px;
+}
+
+
+/* 活期理财/定期理财 */
+
+.title i.blue {
+    background: #b1cff2;
+}
+
+.title {
+    margin-bottom: 9px;
+}
+
+.pro-tab {
+    background: #fff;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.pro-tab li {
+    float: left;
+    width: 173px;
+    height: 65px;
+    line-height: 65px;
+    color: #333;
+    font-size: 18px;
+    position: relative;
+    /* padding-left: 85px; */
+    text-align: center;
+    cursor: pointer;
+    border-top: 4px solid #fff;
+}
+
+.pro-tab li.active {
+    background: #e7e2de;
+    border-top: 4px solid #a68970;
+    box-sizing: border-box;
+}
+
+.pro-tab i {
+    display: inline-block;
+    width: 45px;
+    height: 40px;
+    position: relative;
+    top: 13px;
+    left: -5px;
+}
+
+.pro-tab li:hover {
+    background: #e7e2de;
+    border-top: 4px solid #e7e2de;
+}
+
+.pro-tab li.active:hover {
+    background: #e7e2de;
+    border-top: 4px solid #a68970;
+}
+
+.htb i {
+    background: url(https://act.bundwealth.com/upload/images/bwcus/bwindexsp2.png) no-repeat;
+    background-position: -205px -300px;
+}
+
+.kuaitou i {
+    top: 10px;
+    height: 40px;
+    background: url(https://act.bundwealth.com/upload/images/bwcus/bwindexsp2.png) no-repeat;
+    background-position: -200px -87px;
+}
+
+.small-pro i {
+    height: 40px;
+    top: 5px;
+    background: url(https://act.bundwealth.com/upload/images/bwcus/bwindexsp2.png) no-repeat;
+    background-position: -206px -139px;
+}
+
+.gushou i {
+    background: url(https://act.bundwealth.com/upload/images/bwcus/bwindexsp2.png) no-repeat;
+    background-position: -205px -200px;
+}
+
+.month-flow i {
+    background: url(https://act.bundwealth.com/upload/images/bwcus/bwindexsp2.png) no-repeat;
+    background-position: -207px -256px;
+}
+
+
+/* 理财部分table */
+
+#small {
+    width: 100%;
+}
+
+.pad00 {
+    padding-left: 0px;
+    background: #fff;
+    background-origin: padding-box;
+}
+
+#small tr th {
+    height: 47px;
+    line-height: 47px;
+    color: #333;
+    font-size: 18px;
+    text-align: center;
+    font-weight: normal;
+}
+
+td {
+    text-align: center;
+}
+
+td>div {
+    padding-bottom: 15px;
+    position: relative;
+}
+
+.yq {
+    color: #ff7334;
+    font-size: 32px;
+    padding-top: 15px;
+    text-align: center;
+}
+
+#kuaitou .ul-pro-list .pro-sy {
+    padding: 30px 0;
+}
+
+#kuaitou .pro-sy div {
+    padding-bottom: 0;
+}
+
+#kuaitou .ul-pro-list .pro-sy div .yq {
+    line-height: 52px;
+    padding-top: 0;
+    border-right: 1px solid #e3e3e3;
+}
+
+.jd {
+    color: #797979;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.load2 {
+    width: 120px;
+    margin: 0 auto;
+    height: 6px;
+    border-radius: 100px;
+    background: #e2e2e2;
+}
+
+.load2 span {
+    display: block;
+    border-radius: 100px;
+    background: #ff7334;
+    height: 6px;
+    width: 12px;
+}
+
+td a {
+    display: block;
+    margin: 0 auto;
+    font-size: 16px;
+    color: #ff6f00 !important;
+    text-align: center;
+    line-height: 38px;
+    width: 120px;
+    height: 38px;
+    border: 1px solid #ff6f00;
+    border-radius: 4px;
+}
+
+p.line2 {
+    position: absolute;
+    width: 1px;
+    height: 57px;
+    background: #e3e3e3;
+    right: 0;
+    top: 30px;
+}
+
+td {
+    border-bottom: 2px solid #f1f1f1;
+}
+
+.pro-name {
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+    padding-top: 33px;
+}
+
+#htb .pro-name1 p.pro-name {
+    padding: 0;
+    line-height: 112px;
+}
+
+.pro-name span {
+    color: #ff6a66;
+    font-size: 12px;
+    display: inline-block;
+    /* width: 45px; */
+    padding: 0 5px;
+    height: 20px;
+    line-height: normal;
+    text-align: center;
+    border-radius: 100px;
+    border: 1px solid #ff6a66;
+    margin-left: 4px;
+}
+
+.pro-bm {
+    font-size: 14px;
+    color: #979797;
+    text-align: center;
+}
+
+#mont .ul-pro-list .pro-name {
+    text-align: left;
+    padding-left: 20px;
+}
+
+#kuaitou .ul-pro-list .pro-name {
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 0;
+    line-height: 112px;
+}
+
+#mont .ul-pro-list .pro-bm {
+    text-align: left;
+    padding-left: 20px;
+}
+
+#antou .ul-pro-list .pro-name {
+    text-align: left;
+    padding-left: 20px;
+}
+
+#antou .ul-pro-list .pro-bm {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.char-more a {
+    font-size: 16px;
+    height: 56px;
+    line-height: 56px;
+    color: #72563b !important;
+    text-align: center;
+    vertical-align: middle;
+    width: 200px;
+    margin: 0 auto;
+    display: block;
+}
+
+.char-more i {
+    background: url(https://act.bundwealth.com/upload/images/bwcus/bwindexsp2.png) no-repeat 0 -392px;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    position: relative;
+    left: 0;
+    top: 5px;
+}
+
+#kuaitou .char-more {
+    min-height: 200px;
+    padding: 100px 0;
+}
+
+#kuaitou .char-more a {
+    width: 300px;
+    line-height: 56px;
+    position: relative;
+    color: #d1d1d1 !important;
+    font-size: 18px;
+    cursor: default;
+    text-align: left;
+}
+
+#kuaitou .char-more i {
+    background: url(https://act.bundwealth.com/upload/images/bwcus/bwindexsp2.png) no-repeat -125px -888px;
+    background: url(https://act.bundwealth.com/upload/images/bwcus/bwindexsp2.png) no-repeat -125px -888px;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 200px;
+    top: 0;
+}
+
+.ques {
+    display: block;
+    font-size: 12px;
+    text-align: center;
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    color: #72563b;
+    border: 1px solid #a68970;
+    position: absolute;
+    right: 5px;
+    top: 3px;
+    line-height: normal;
+}
+
+
+/* 公募基金部分 */
+
+.pub-tab {
+    background: #fff;
+    margin-bottom: 20px;
+}
+
+.tab-list-top {
+    /*border-bottom: 1px solid #e6e6e6;*/
+    background: #f9f9f9;
+}
+
+.tab-list-top li {
+    font-size: 14px;
+    color: #999;
+    text-align: center;
+    height: 46px;
+    line-height: 46px;
+    float: left;
+    text-align: center;
+}
+
+.new-jz {
+    width: 150px;
+}
+
+.jjin-name {
+    width: 200px;
+}
+
+.week {
+    width: 125px;
+    text-align: right;
+    line-height: 105px;
+}
+
+.mon {
+    width: 125px;
+    text-align: right;
+    line-height: 105px;
+}
+
+.thmon {
+    width: 125px;
+    text-align: right;
+    line-height: 105px;
+}
+
+.oyear {
+    width: 125px;
+    text-align: right;
+    line-height: 105px;
+}
+
+.safe {
+    width: 143px;
+    text-align: right;
+    line-height: 105px;
+}
+
+.cont {
+    width: 100px;
+    text-align: center;
+    line-height: 105px;
+}
+
+.pad0 {
+    padding-left: 0px;
+}
+
+.tab-list {
+    padding-left: 20px;
+}
+
+.tab-list li {
+    float: left;
+    border-bottom: 1px solid #f6f6f6;
+    height: 105px;
+    font-size: 18px;
+}
+
+.tab-list .new-jz {
+    width: 135px;
+    position: relative;
+}
+
+.tab-list li a {
+    color: #ff7334 !important;
+    display: block;
+    width: 90px;
+    height: 30px;
+    border: 1px solid #ff7334;
+    border-radius: 4px;
+    line-height: 30px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+}
+
+.tab-list .cont {
+    width: 90px;
+    padding-top: 37px;
+}
+
+.down {
+    color: #4abd5a;
+    font-size: 18px;
+}
+
+.up {
+    color: #ff7334;
+    font-size: 18px;
+}
+
+.new-jz>div {
+    font-size: 36px;
+    color: #ff7334;
+    padding-top: 20px;
+}
+
+.new-jz p {
+    font-size: 14px;
+    color: #979797;
+}
+
+span.line2 {
+    display: block;
+    width: 1px;
+    background: #e3e3e3;
+    height: 57px;
+    position: absolute;
+    right: 0;
+    top: 25px;
+}
+
+.jjin-name p {
+    text-indent: 18px;
+    font-size: 18px;
+    color: #333;
+    padding-top: 25px;
+}
+
+.jjin-name p span {
+    display: inline-block;
+    margin-left: 5px;
+    width: 45px;
+    height: 20px;
+    line-height: normal;
+    font-size: 12px;
+    color: #ff6a66;
+    text-indent: 0;
+    position: relative;
+    top: -3px;
+    border: 1px solid #ff7334;
+    border-radius: 100px;
+    text-align: center;
+}
+
+.jjin-name p.jjin-bm {
+    font-size: 14px;
+    color: #979797;
+    padding-top: 5px;
+}
+
+ul.last li {
+    border: none;
+}
+
+
+/* 保险部分 */
+
+.title i.ocean {
+    background: #1bc9c7;
+}
+
+.insure-cont {
+    background: #fff;
+    margin-bottom: 20px;
+}
+
+.insure-l {
+    float: left;
+    position: relative;
+    width: 266px;
+}
+
+.insure-r {
+    float: right;
+    width: 834px;
+}
+
+.insure-l p {
+    background: rgba(241, 202, 145, .71);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 93px;
+    line-height: 93px;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+}
+
+.insure-tab {
+    height: 50px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.insure-tab li {
+    float: right;
+    width: 100px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 48px;
+    color: #a9a9a9;
+    cursor: pointer;
+}
+
+.insure-tab li.acts {
+    border-bottom: 2px solid #e8cfb8;
+    color: #000;
+    box-sizing: border-box;
+}
+
+.pro-l,
+.pro-r {
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+.pro-r {
+    float: right;
+    text-align: center;
+}
+
+.insure-pro-name {
+    padding-top: 50px;
+    font-size: 22px;
+    color: #333;
+}
+
+.insure-discrib {
+    padding-top: 15px;
+    padding-bottom: 30px;
+    font-size: 14px;
+    color: #979797;
+}
+
+.health .insure-discrib {
+    padding-bottom: 45px;
+}
+
+.insure-sy {
+    font-size: 72px;
+    color: #a38970;
+}
+
+.rig-line {
+    border-right: 1px solid #e5e5e5;
+}
+
+.insure-ico {
+    padding-left: 60px;
+    color: #666;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.insure-ico dl {
+    float: left;
+}
+
+.insure-ico dl dt {
+    margin-bottom: 10px;
+    height: 45px;
+    background: url(https://act.bundwealth.com/upload/images/bwcus/bwindexsp2.png) no-repeat;
+}
+
+.insure-ico dl dt.ico-1 {
+    background-position: -139px -301px;
+}
+
+.insure-ico dl dt.ico-2 {
+    background-position: -130px -357px;
+}
+
+.insure-ico dl dt.ico-3 {
+    background-position: -135px -456px;
+}
+
+.insure-ico dl dt.ico-4 {
+    background-position: -139px -408px;
+}
+
+.marg {
+    margin: 0 44px;
+}
+
+.insure-year {
+    margin-bottom: 15px;
+    color: #979797;
+    font-size: 14px;
+}
+
+.insure-pro a {
+    display: block;
+    width: 214px;
+    height: 46px;
+    line-height: 46px;
+    border: 1px solid #c3ad9b;
+    border-radius: 4px;
+    text-align: center;
+    /*margin: 0 auto;*/
+    color: #8a5e3c !important;
+    position: absolute;
+    left: 50%;
+    margin-left: -107px;
+    bottom: 25px;
+}
+
+.health p {
+    padding-left: 60px;
+    text-align: left;
+}
+
+.health .rig-line p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.health span {
+    color: #ff7334;
+}
+
+.health p.insure-discrib {
+    padding-top: 5px;
+}
+
+.health .pro-r p.fz14 {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.health p.last {
+    margin-bottom: 30px;
+}
+
+.health .pro-r p.last {
+    margin-bottom: 30px;
+}
+
+.health p.bf {
+    width: 266px;
+    height: 46px;
+    line-height: 46px;
+    padding-left: 15px;
+    margin-left: 60px;
+    border-radius: 4px;
+    border: 1px solid #C3AD9B;
+    margin-top: 10px;
+}
+
+.txt-r {
+    float: right;
+    margin-right: 20px;
+}
+
+.pro-r input {
+    display: block;
+    width: 266px;
+    height: 46px;
+    line-height: 46px;
+    padding-left: 15px;
+    font-size: 16px;
+    /* color: #cacaca; */
+    border: 1px solid #d5d5d5;
+    border-radius: 4px;
+    margin-left: 60px;
+    margin-top: 10px;
+}
+
+.insure-eg {
+    border-top: 4px solid #d4a88b;
+    background: #fff;
+    margin-bottom: 20px;
+}
+
+.insure-eg>div {
+    float: left;
+    width: 33.33%;
+    box-sizing: border-box;
+    background-position: right bottom;
+    padding-left: 30px;
+    position: relative;
+}
+
+.fix {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 0;
+    background: rgba(166, 137, 112, .3);
+    transition: all .2s linear;
+}
+
+.insure-eg>div:hover .fix {
+    height: 100%;
+    transition: all .2s linear;
+}
+
+.eg1 {
+    background: url(https://act.bundwealth.com/upload/images/bwcus/bwindex_eg1.png) no-repeat;
+}
+
+.eg2 {
+    background: url(https://act.bundwealth.com/upload/images/bwcus/bwindex_eg2.png) no-repeat;
+}
+
+.eg3 {
+    background: url(https://act.bundwealth.com/upload/images/bwcus/bwindex_eg3.png) no-repeat;
+}
+
+.bod {
+    border-right: 1px solid #efefef;
+    border-left: 1px solid #efefef;
+}
+
+.insure-eg h3 {
+    padding-top: 35px;
+    font-size: 22px;
+    color: #333;
+    padding-bottom: 10px;
+    font-weight: normal;
+}
+
+.insure-eg h3+p {
+    color: #979797;
+    font-size: 12px;
+}
+
+p.money {
+    margin-top: 55px;
+    font-size: 30px;
+    color: #a38970;
+}
+
+p.money span {
+    font-size: 60px;
+}
+
+
+/* 高端理财 */
+
+.top-mon-cot {
+    background: #fff;
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.top-mon-cot img {
+    float: left;
+    margin-right: 10px;
+}
+
+.top-mon-line {
+    position: absolute;
+    width: 1px;
+    background: #e3e3e3;
+    height: 142px;
+    left: 50%;
+    margin-left: -1px;
+    top: 30px;
+}
+
+.top-mon-l {
+    float: left;
+    width: 50%;
+}
+
+.top-mon-l h4 {
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    padding: 15px 0 18px;
+    font-weight: normal;
+}
+
+.top-mon-l p {
+    font-size: 16px;
+    color: #333;
+    height: 130px;
+    padding: 0 30px;
+}
+
+.top-mon-l a {
+    display: block;
+    width: 120px;
+    height: 34px;
+    line-height: 30px;
+    font-size: 16px;
+    color: #ff7334;
+    border-radius: 4px;
+    text-align: center;
+    border: 1px solid #ff7334;
+    margin: 0 auto;
+}
+
+.pub {
+    margin-bottom: 20px;
+}
+
+.pub-l {
+    float: left;
+    width: 650px;
+    background: #fff;
+}
+
+.pub-l .title,
+.pub-r .title {
+    background: #f3f3f3;
+    margin-bottom: 0;
+    padding-bottom: 9px;
+}
+
+.pub-r {
+    float: right;
+    width: 435px;
+}
+
+.pub-cot {
+    padding-left: 90px;
+}
+
+.pub-name-bg {
+    padding-top: 52px;
+    float: left;
+    background: url(https://act.bundwealth.com/upload/images/bwcus/bwindexsp2.png) no-repeat;
+    background-position: -380px 20px;
+}
+
+.pub-list {
+    margin-bottom: 38px;
+}
+
+.buy-name {
+    width: 90px;
+    height: 31px;
+    line-height: 31px;
+    font-size: 16px;
+    background: #a68970;
+    border-radius: 100px;
+    text-align: center;
+    color: #fff;
+    float: left;
+}
+
+.buy-detail {
+    padding-left: 115px;
+}
+
+.detail {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.pub-pro-name {
+    font-size: 18px;
+    color: #a68970;
+    margin-bottom: 5px;
+}
+
+.pub-pro-name a {
+    color: #ff7334 !important;
+    font-size: 12px;
+    text-decoration: underline;
+    margin-left: 5px;
+}
+
+.time {
+    color: #979797;
+    font-size: 12px;
+}
+
+.all-pro {
+    margin-top: 52px;
+    float: right;
+    margin-right: 30px;
+    width: 204px;
+}
+
+.all-pro p {
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 18px;
+}
+
+.a-all a {
+    display: block;
+    width: 63px;
+    height: 20px;
+    line-height: 18px;
+    text-align: center;
+    font-size: 12px;
+    color: #ff7334;
+    border-radius: 100px;
+    border: 1px solid #ff7334;
+    float: left;
+    margin-right: 5px;
+    margin-bottom: 11px;
+}
+
+.APP {
+    height: 264px;
+    background: #fff;
+    padding: 26px 20px 20px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.APP>img {
+    margin-left: 10px;
+}
+
+.download {
+    float: right;
+    text-align: center;
+}
+
+.download p {
+    padding-top: 10px;
+}
+
+.trangle {
+    border-top: 5px solid #000;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    margin: 8px auto 10px;
+    display: block;
+    width: 5px;
+}
+
+
+/* 帮助中心 */
+
+.help-cot {
+    background: #fff;
+    padding-bottom: 14px;
+}
+
+.help-cot p:before {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    background: #a68970;
+    position: absolute;
+    left: 14px;
+    top: 30px;
+}
+
+.help-cot p {
+    position: relative;
+    padding: 20px 0 0 30px;
+}
+
+.help-cot p a {
+    color: #333 !important;
+    font-size: 18px;
+}
+
+
+/* 资讯服务 */
+
+.serve {
+    margin-bottom: 20px;
+}
+
+.serve-cot {
+    background: #fff;
+    height: 330px;
+}
+
+.serve-cot>div {
+    width: 33.33%;
+    float: left;
+    height: 330px;
+}
+
+.serve-cot h5 {
+    padding-left: 25px;
+    padding-right: 10px;
+    border-bottom: 1px solid #f1f1f1;
+    height: 49px;
+    color: #333;
+    line-height: 49px;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.serve-cot h5 a {
+    float: right;
+    color: #adadad !important;
+}
+
+.hot {
+    position: relative;
+    padding-left: 20px;
+    margin-top: 15px;
+}
+
+.hot a>img {
+    float: left;
+    margin-right: 13px;
+}
+
+.hot p {
+    font-size: 16px;
+    color: #333;
+}
+
+.hot p.data {
+    position: absolute;
+    left: 183px;
+    bottom: 0;
+    color: #adadad;
+    font-size: 14px;
+}
+
+.news-list {
+    padding: 37px 10px 0 20px;
+}
+
+.news-list span.data {
+    float: right;
+    color: #adadad;
+    font-size: 14px;
+}
+
+span.tit-l {
+    text-align: left;
+    width: 260px;
+    height: 18px;
+    line-height: 18px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 16px;
+    color: #333;
+}
+
+.news-list p {
+    margin-bottom: 17px;
+}
+
+.how-do h5 a {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    width: 126px;
+    float: none;
+}
+
+.how-do .hot>img {
+    float: none;
+    margin-right: 0;
+}
+
+.how-do p {
+    font-size: 16px;
+    color: #333;
+    padding: 10px 12px 0 15px;
+}
+
+
+/* 合作机构 */
+
+.contact-cot {
+    background: #fff;
+    padding: 14px 36px;
+    position: relative;
+}
+
+.cota>a {
+    float: left;
+    margin-right: 16px;
+    display: block;
+    /* width: 202px;
+	height: 84px; */
+}
+
+.cont-l-box {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 35px;
+    height: 107px;
+    cursor: pointer;
+}
+
+.cont-l {
+    position: absolute;
+    left: 14px;
+    top: 45px;
+    width: 15px;
+    height: 15px;
+    z-index: 5;
+    cursor: pointer;
+    border-left: 2px solid #BD8C4E;
+    border-top: 2px solid #BD8C4E;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+}
+
+.cont-r-box {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 35px;
+    height: 107px;
+    cursor: pointer;
+}
+
+.cont-r {
+    position: absolute;
+    right: 14px;
+    top: 45px;
+    width: 15px;
+    height: 15px;
+    z-index: 5;
+    cursor: pointer;
+    border-right: 2px solid #BD8C4E;
+    border-top: 2px solid #BD8C4E;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    ;
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+}
+
+.cota img {
+    width: 193px;
+    height: 79px;
+}
+
+#out-box {
+    position: relative;
+    height: 79px;
+    overflow: hidden;
+}
+
+#in-box {
+    width: 1100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all .5s linear;
+}
+
+.contact-cot {
+    margin-bottom: 65px;
+}
+
+
+/* 底部版权部分 */
+
+.footer {
+    height: 395px;
+    background: #fff;
+}
+
+.footer-cot {
+    width: 1100px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.footer-top ul {
+    width: 196px;
+}
+
+.footer-top>ul {
+    float: left;
+}
+
+.footer-top {
+    border-bottom: 1px solid #efefef;
+    height: 270px;
+}
+
+.footer-top li a p {
+    font-size: 20px;
+    color: #a68970;
+    margin-bottom: 30px;
+}
+
+.footer-top li a {
+    color: #a68970 !important;
+    font-size: 14px;
+}
+
+.footer-top li {
+    margin-bottom: 18px;
+}
+
+.tech {
+    width: 300px;
+    float: left;
+    margin-right: 130px;
+}
+
+.tech dl {
+    float: left;
+    margin-right: 30px
+}
+
+dt i {
+    display: block;
+    width: 80px;
+    height: 80px;
+    background: url(https://act.bundwealth.com/upload/images/bwcus/bwindexsp2.png) no-repeat;
+}
+
+i.down-img {
+    background-position: 0 -143px;
+}
+
+.dow-a,
+.dow-w,
+.dow-s {
+    position: relative;
+    cursor: pointer;
+}
+
+.app-ewm,
+.wx-ewm,
+.sina-ewm {
+    background: #fff;
+    position: absolute;
+    left: -30px;
+    top: -162px;
+    width: 144px;
+    height: 144px;
+    padding: 10px;
+    z-index: 3;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, .5);
+}
+
+.app-dow {
+    width: 124px;
+    height: 124px;
+    background: url(https://act.bundwealth.com/upload/images/bwcus/bwindexsp2.png) no-repeat;
+    background-position: -295px -452px;
+}
+
+.wx-dow {
+    width: 124px;
+    height: 124px;
+    background: url(https://act.bundwealth.com/upload/images/bwcus/bwindexsp2.png) no-repeat;
+    background-position: -295px -324px;
+}
+
+.sina-dow {
+    width: 124px;
+    height: 124px;
+    background: url(https://act.bundwealth.com/upload/images/bwcus/bwindexsp2.png) no-repeat;
+    background-position: -295px -196px;
+}
+
+.dow-a:hover i.down-img {
+    background-position: -125px -612px;
+}
+
+.dow-w:hover i.wx-img {
+    background-position: -125px -703px;
+}
+
+.dow-s:hover i.sina-img {
+    background-position: -125px -797px;
+}
+
+i.wx-img {
+    background-position: 0 -224px;
+}
+
+i.sina-img {
+    background-position: 0 -305px;
+}
+
+.tech p {
+    font-size: 20px;
+    color: #a68970;
+    margin-bottom: 38px;
+}
+
+.tech dl dt {
+    margin-bottom: 5px
+}
+
+.tech dl.dl-last {
+    margin-right: 0;
+}
+
+.tech dl dd a {
+    text-align: center;
+    font-size: 14px;
+    color: #979797 !important;
+    display: block;
+    margin: 0 auto;
+}
+
+.locat {
+    float: left;
+}
+
+.locat-us {
+    font-size: 20px;
+    color: #a68970;
+    margin-bottom: 38px;
+}
+
+.phone {
+    font-size: 28px;
+    color: #a68970;
+    margin-bottom: 20px;
+}
+
+.gdp {
+    font-size: 20px;
+    color: #333;
+}
+
+.work {
+    font-size: 14px;
+    color: #979797;
+    margin-bottom: 15px;
+}
+
+.mail {
+    font-size: 18px;
+    color: #333;
+}
+
+.copy {
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+    padding: 15px 0;
+}
+
+.copy-info {
+    font-size: 26px;
+    text-align: center;
+    color: #c2c2c2;
+}
+
+
+/* 头部部分 */
+
+.header {
+    background: #f3f3f3;
+}
+
+.head-top {
+    width: 1100px;
+    margin: 0 auto;
+    height: 30px;
+}
+
+.head-l {
+    float: left;
+}
+
+.head-l a {
+    display: block;
+    float: left;
+    margin-right: 20px;
+    color: #afafaf !important;
+    font-size: 12px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.tips {
+    float: right;
+}
+
+.tips li {
+    margin-left: 25px;
+    float: right;
+}
+
+.tips li i {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(https://act.bundwealth.com/upload/images/bwcus/bwindexsp2.png) no-repeat;
+    position: relative;
+    top: 5px;
+    margin-right: 10px;
+}
+
+.tips li {
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    color: #afafaf;
+    position: relative;
+    cursor: default;
+}
+
+.tips li div {
+    position: absolute;
+    left: 0;
+    top: 30px;
+    width: 108px;
+    height: 108px;
+    padding: 10px;
+    box-shadow: 0 2px 2px #666;
+    z-index: 10;
+    background: #fff;
+    display: none;
+    border-radius: 5px;
+}
+
+.tips li div.app-pic b {
+    display: block;
+    height: 88px;
+    background: #fff url(https://act.bundwealth.com/upload/images/bwcus/bwindexsp2.png) no-repeat;
+    background-position: 0 -486px;
+    overflow: hidden;
+}
+
+.tips li div.wx-pub b {
+    display: block;
+    height: 88px;
+    background: #fff url(https://act.bundwealth.com/upload/images/bwcus/bwindexsp2.png) no-repeat;
+    background-position: 0 -574px;
+    overflow: hidden;
+}
+
+.tips li div.head-sina b {
+    display: block;
+    height: 88px;
+    background: #fff url(https://act.bundwealth.com/upload/images/bwcus/bwindexsp2.png) no-repeat;
+    background-position: 0 -662px;
+    overflow: hidden;
+}
+
+.login {
+    float: right;
+}
+
+.login a {
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 19px;
+    font-size: 12px;
+    display: inline-block;
+    color: #a3856b;
+}
+
+.login span {
+    float: left;
+    color: #999;
+    font-size: 12px;
+    line-height: 30px;
+    margin-right: 12px;
+}
+
+.tips li.kefu i {
+    background-position: -80px -105px;
+    transition: all 0.2s linear;
+}
+
+
+/* .tips li.kefu:hover i{
+	background-position: -80px -85px;
+	transition: all 0.2s linear;
+} */
+
+.tips li.qq i {
+    background-position: -100px -105px;
+    transition: all 0.2s linear;
+}
+
+
+/* .tips li.qq:hover i{
+	background-position: -100px -85px;
+	transition: all 0.2s linear;
+} */
+
+.tips li.sina i {
+    background-position: -40px -105px;
+    transition: all 0.2s linear;
+}
+
+
+/* .tips li.sina:hover i{
+	background-position: -40px -85px;
+	transition: all 0.2s linear;
+} */
+
+.tips li.weixin i {
+    background-position: -20px -105px;
+    transition: all 0.2s linear;
+}
+
+
+/* .tips li.weixin:hover i{
+	background-position: -20px -85px;
+	transition: all 0.2s linear;
+} */
+
+.tips li.soft i {
+    background-position: 0 -105px;
+    transition: all 0.2s linear;
+}
+
+
+/* .tips li.soft:hover i{
+	background-position: 0 -85px;
+	transition: all 0.2s linear;
+} */
+
+.head-nav {
+    background: #fff;
+    height: 52px;
+    border-bottom: 1px solid #ededed;
+}
+
+.head-con {
+    width: 1100px;
+    margin: 0 auto;
+    height: 52px;
+}
+
+.head-con a {
+    float: left;
+}
+
+.bw-logo {
+    position: relative;
+    top: 10px;
+    margin-right: 145px;
+}
+
+.navb {
+    float: left;
+    position: relative;
+    margin-top: 7px;
+}
+
+.navb li {
+    position: relative;
+    float: left;
+    margin-right: 40px;
+    line-height: 37px;
+    height: 44px;
+    color: #96663d !important;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.navb li:hover {
+    color: #ff7334 !important;
+}
+
+.navb span.line {
+    position: absolute;
+    display: none;
+    width: 36px;
+    height: 3px;
+    border-radius: 4px;
+    background: #ff7334;
+    left: -2px;
+    bottom: 7px;
+    /*transition: all 0.2s linear;*/
+}
+
+.navb li a {
+    color: #96663d;
+}
+
+.my-pro {
+    float: right;
+    width: 108px;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 11px;
+    background: #BC9E83;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    text-align: center;
+    color: #fbeadb;
+    font-size: 14px;
+    position: relative;
+    cursor: pointer;
+}
+
+.my-pro i.arrow {
+    position: absolute;
+    display: inline-block;
+    width: 10px;
+    top: 8px;
+    right: 10px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    height: 10px;
+    transition: all .2s linear;
+    border-top: 1px solid #fbeadb;
+    border-right: 1px solid #fbeadb;
+}
+
+.my-pro i.arrow-down {
+    top: 12px;
+    transform: rotate(315deg);
+    -o-transform: rotate(315deg);
+    -moz-transform: rotate(315deg);
+    -webkit-transform: rotate(315deg);
+    -ms-transform: rotate(315deg);
+    transition: all .2s linear;
+}
+
+ul.my-list {
+    width: 108px;
+    position: absolute;
+    left: 0;
+    top: 30px;
+}
+
+ul.my-list li a {
+    height: 42px;
+    width: 100%;
+    line-height: 42px;
+    text-align: center;
+    font-size: 15px;
+    color: #fff !important;
+    background: #aa8c6d;
+    display: block;
+}
+
+ul.my-list li a:hover {
+    background: #8c6740;
+}
+
+.tab-list li.cont a:hover {
+    background: #FFEDE5;
+}
+
+.cz a:hover {
+    background: #FFEDE5;
+    color: #FF6F00 !important;
+}
+
+.end a {
+    color: #fff !important;
+    background: #a9a9a9;
+    border: 1px solid #a9a9a9;
+}
+
+.end a:hover {
+    cursor: disabled;
+    background: #a9a9a9;
+    color: #fff !important;
+    cursor: not-allowed;
+}
+
+.insure-buy:hover {
+    background: #8a5e3c;
+    color: #fff !important;
+}
+
+.top-mon-l a:hover {
+    background: #ff7334;
+    color: #fff !important;
+}
+
+.head-l a:hover {
+    color: #666 !important;
+}
+
+.fl_back {
+    width: 50px;
+    height: 49px;
+    background-color: #fff;
+    border-top: 1px solid #e3e3e3;
+    background: #fff url(https://act.bundwealth.com/upload/images/bwcus/bwindexsp2.png) no-repeat;
+    cursor: pointer;
+    border: 1px solid #e3e3e3;
+    border-top: none;
+    display: none;
+    background-position: 0 -976px;
+}
+
+.fl_back:hover {
+    background-position: -48px -976px;
+}
+
+div.list {
+    width: 288px;
+    position: absolute;
+    right: 0;
+    top: 30px;
+    background: rgba(0, 0, 0, .7);
+    background: filter;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    z-index: 5;
+    background: #000\0;
+    border-top-left-radius: 5px;
+    overflow: hidden;
+}
+
+.userCenter-hover .list-top {
+    margin-top: 0;
+}
+
+.list-top {
+    margin-top: -10px;
+    -moz-transition: margin-top .2s ease-in-out;
+    -o-transition: margin-top .2s ease-in-out;
+    -webkit-transition: margin-top .2s ease-in-out;
+    transition: margin-top .2s ease-in-out;
+    border-top-left-radius: 4px;
+    background: linear-gradient(-180deg, #bd9f84 0%, #917257 100%);
+    background: -moz-linear-gradient(top, #bd9f84, #917257 100%);
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#bd9f84), to(#917257 100%));
+    background: -o-linear-gradient(top, #bd9f84, #917257 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#bd9f84', endColorstr='#917257', GradientType=0);
+}
+
+.user-head {
+    display: block;
+    float: left;
+    width: 62px;
+    height: 62px;
+    border-radius: 31px;
+    margin-left: 20px;
+    margin-top: 10px;
+    background: url(https://act.bundwealth.com/upload/images/bwcus/bwindexsp2.png) no-repeat;
+    background-position: -2px -420px;
+}
+
+.user {
+    padding-left: 108px;
+    padding-top: 20px;
+}
+
+.no-login .user {
+    padding-left: 95px;
+    padding-top: 12px;
+}
+
+.user i.char {
+    float: right;
+    margin-right: 20px;
+    color: #fff !important;
+    font-size: 14px;
+    height: 20px;
+    line-height: 20px;
+    text-decoration: underline;
+    margin-top: 5px;
+}
+
+.user i.zs {
+    display: block;
+    width: 15px;
+    height: 15px;
+    float: right;
+    margin-right: 90px;
+    margin-top: 9px;
+    background: url(https://act.bundwealth.com/upload/images/bwcus/bwindexsp2.png) no-repeat;
+    background-position: -111px -395px;
+}
+
+p.tzq {
+    text-align: left;
+    font-size: 12px;
+}
+
+.user>p {
+    height: 30px;
+    line-height: 30px;
+}
+
+.user-name {
+    font-size: 18px;
+    float: left;
+}
+
+.list-mid {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background: #fff;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .35);
+    padding: 10px 0;
+}
+
+.list-l {
+    float: left;
+    width: 85px;
+    padding-left: 20px;
+    color: #a7a7a7;
+    font-size: 12px;
+}
+
+.list-l li,
+.user-zc li {
+    height: 33px;
+    line-height: 33px;
+    text-align: left;
+}
+
+.user-zc {
+    width: 125px;
+    float: left;
+    color: #3f3f3f;
+    text-align: left;
+}
+
+.user-act {
+    float: left;
+    color: #c1a58d;
+    font-size: 12px;
+    padding-right: 20px;
+}
+
+.user-act li {
+    height: 33px;
+    text-align: right;
+}
+
+.user-act li a {
+    color: #c1a58d !important;
+    font-size: 12px;
+    height: 33px;
+    line-height: 33px;
+    display: inline-block;
+    float: right;
+}
+
+.uesr-act li.first {
+    display: block;
+    width: 100%;
+    text-align: right;
+}
+
+.user-act a.user-qx {
+    margin-right: 10px;
+}
+
+.insure-type {
+    width: 218px;
+    z-index: 35;
+    position: absolute;
+    left: -94px;
+    top: 40px;
+    border-radius: 4px;
+    /* opacity: 0;
+	filter: alpha(opacity=0); */
+    display: none;
+    border-top: 10px solid transparent;
+}
+
+.insure-type>div {
+    background: #fff;
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .35);
+}
+
+.insure-type p a {
+    font-size: 14px;
+    color: #000 !important;
+    height: 16px;
+    line-height: 16px;
+}
+
+p.insure-red {
+    color: #ff5a4c;
+}
+
+p.insure-red a {
+    color: #ff5a4c !important;
+    font-size: 14px;
+}
+
+span.trang {
+    border-bottom: 5px solid #fff;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    left: 50%;
+    position: absolute;
+    margin-left: -5px;
+    top: -5px;
+    z-index: 30;
+}
+
+.insure-type i {
+    display: inline-block;
+    width: 3px;
+    height: 15px;
+    margin-right: 7px;
+    float: left;
+    background: #000;
+}
+
+.insure-type p.insure-red i {
+    background: #ff5a4c;
+    border-radius: 4px;
+}
+
+.insure-type p {
+    height: 16px;
+    line-height: 16px;
+}
+
+.insure-type p.type-discrib {
+    font-size: 12px;
+    color: #bababa;
+    margin-bottom: 17px;
+    margin-top: 5px;
+    text-indent: 10px;
+}
+
+.insure-type p.pro-last {
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+.insure-type p>span {
+    float: right;
+    margin-right: 20px;
+}
+
+.huoqi p {
+    margin-bottom: 20px;
+}
+
+.pub-two {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    background: #fff;
+    overflow: hidden;
+}
+
+.pub-two-cont {
+    width: 1100px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.pub-two-cont p {
+    float: left;
+    margin-right: 30px;
+}
+
+.pub-two-cont p a {
+    color: #a3856b!important;
+    font-size: 12px;
+}
+
+.pub-line {
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    border-radius: 4px;
+    background: #a68970;
+    left: 0;
+    bottom: 3px;
+}
+
+.my-pro:hover {
+    /*border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;*/
+}
+
+.no-login {
+    width: 288px;
+    /* display: none; */
+}
+
+.no-login h3 {
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+    padding-top: 25px;
+    padding-bottom: 12px;
+}
+
+.no-login a {
+    float: none;
+    display: block;
+    margin: 0 auto;
+    width: 214px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    /* box-shadow: 0 2px 0 0 #42362C; */
+    background: linear-gradient(-180deg, #bd9f84 0%, #917257 100%);
+    background: -moz-linear-gradient(top, #bd9f84, #917257 100%);
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#bd9f84), to(#917257 100%));
+    background: -o-linear-gradient(top, #bd9f84, #917257 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#bd9f84', endColorstr='#917257', GradientType=0);
+}
+
+
+/* .al-login{
+	display: block;
+} */
+
+i.eye {
+    background: url(https://act.bundwealth.com/upload/images/bwcus/bwindexsp2.png) no-repeat;
+    background-position: -35px -397px;
+    display: inline-block;
+    width: 20px;
+    height: 10px;
+    float: right;
+    margin-top: 11px;
+}
+
+i.xs {
+    background-position: -60px -397px;
+}
+
+.banner-con {
+    width: 1100px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+/*浮动图标*/
+
+.sidebar.fl {
+    width: 50px;
+    height: 250px;
+    border-top: 1px solid #e3e3e3;
+    position: fixed;
+    left: 50%;
+    bottom: 15px !important;
+    margin-left: 580px;
+    margin-top: 0px;
+    z-index: 20;
+}
+
+.fl_qq,
+.fl_wx,
+.fl_er,
+.fl_fb,
+.fl_back {
+    width: 50px;
+    height: 49px;
+    background-color: #fff;
+    border-top: 1px solid #e3e3e3;
+    background: #fff url(https://act.bundwealth.com/upload/images/bwcus/bwindexsp2.png) no-repeat;
+    cursor: pointer;
+    border: 1px solid #e3e3e3;
+    border-top: none;
+}
+
+.fl_qq {
+    background-position: 0 -757px;
+}
+
+.fl_qq:hover {
+    background-position: -48px -757px;
+    border: 1px solid #f18229;
+    border-top: none;
+}
+
+.fl_wx {
+    background-position: 0 -855px;
+    position: relative;
+    z-index: 20;
+}
+
+.fl_wx:hover {
+    background-position: -48px -829px;
+    border: 1px solid #f18229;
+    border-left: 1px solid #fff;
+}
+
+.fl_er {
+    background-position: 0 -855px;
+    position: relative;
+    z-index: 20;
+}
+
+.fl_er:hover {
+    background-position: -48px -855px;
+    border: 1px solid #f18229;
+    border-left: 1px solid #fff;
+}
+
+.fl_fb {
+    background-position: 0 -905px;
+}
+
+.fl_fb:hover {
+    background-position: -48px -905px;
+    border: 1px solid #f18229;
+    border-top: none;
+}
+
+.fl_back {
+    background-position: 0 -955px;
+    display: none;
+}
+
+.fl_back:hover {
+    background-position: -48px -952px;
+}
+
+.fl_hover_wrap {
+    width: 0px;
+    height: 197px;
+    position: absolute;
+    left: -162px;
+    top: 0;
+    z-index: 20;
+    overflow: hidden;
+    top: 0px;
+}
+
+.fl_hover_wrap.er {
+    z-index: 9;
+}
+
+.fl_hover {
+    width: 163px;
+    height: 197px;
+    position: absolute;
+    border: 1px solid #f18229;
+    background: #fff;
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+    z-index: 20;
+    left: 163px;
+}
+
+.er .fl_hover_wxico {
+    display: block;
+    width: 139px;
+    height: 136px;
+    margin: 14px 12px;
+    background: url(https://act.bundwealth.com/upload/images/bwcus/bwindexsp2.png) no-repeat;
+    background-position: -290px -720px;
+}
+
+.cooperation_ul a {
+    border: 1px solid #fff;
+}
+
+.cooperation_ul .abox_hover a {
+    border: none;
+}
+
+.atxt_hover:link,
+.atxt_hover:visited {
+    color: #333;
+}
+
+.atxt_hover:hover {
+    color: #f18229 !important;
+}
+
+.abox_hover {
+    border: 1px solid #fff !important;
+}
+
+.abox_hover:hover {
+    border: 1px solid #f18229 !important;
+}
+
+
+/* .nav li.activ>div.insure-type{
+	height: auto;
+	opacity: 100;
+	filter: alpha(opacity=100);
+	transition: all .2s linear;
+	padding-left: 20px;
+	padding-top: 15px;
+	border-top: 10px solid transparent;
+	overflow: auto;
+	top: 55px;
+}
+.nav li div.insure-type{
+	border-top: 0 solid transparent;
+	height: 0;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	transition: all .2s linear;
+	overflow: hidden;
+	padding:0;
+} */
+
+.nav span.line>i.trans {
+    width: 10px;
+    display: inline-block;
+    border-top: 5px solid #ff7334;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    bottom: -5px;
+    left: 50%;
+    margin-left: -5px;
+    position: absolute;
+}
+
+.no-login h3 {
+    padding: 30px 0 0;
+}
+
+.list h3 {
+    /* background: linear-gradient(135deg, #bd9f84 0%,#917257 100%);
+	background:-moz-linear-gradient(top, #bd9f84, #917257 100%);  
+	    background:-webkit-gradient(linear, 0 0, 0 bottom, from(#bd9f84), to(#917257 100%));  
+	    background:-o-linear-gradient(top, #bd9f84, #917257 100%); 
+	    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bd9f84', endColorstr='#917257',GradientType=0 );  */
+    border-top-left-radius: 5px;
+    background: #fff;
+}
+
+h3 a.abtn {
+    display: inline-block;
+    width: 100px;
+    background: #fff;
+    height: 40px;
+    border-radius: 999px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid #A38469;
+    /* background: linear-gradient(-180deg, #bd9f84 0%,#917257 100%);
+	background:-moz-linear-gradient(top, #bd9f84, #917257 100%);  
+	    background:-webkit-gradient(linear, 0 0, 0 bottom, from(#bd9f84), to(#917257 100%));  
+	    background:-o-linear-gradient(top, #bd9f84, #917257 100%); 
+	    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bd9f84', endColorstr='#917257',GradientType=0 );  */
+    color: #BC9E83;
+}
+
+h3 a.abtn:hover {
+    color: #fff;
+    background: #BC9E83;
+}
+
+.no-login .list:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 39px;
+    width: 45px;
+    height: 2px;
+    background: rgba(255, 255, 255, .21);
+    top: 15px;
+}
+
+.no-login .list {
+    margin-bottom: 0;
+}
+
+.no-login .plat {
+    margin-top: -5px;
+}
+
+.no-login .list:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 211px;
+    width: 45px;
+    height: 2px;
+    background: rgba(255, 255, 255, .21);
+    top: 15px;
+}
+
+h3 a.btn1 {
+    margin-right: 15px;
+    background: #fff;
+    color: #BC9E83;
+}
+
+
+/*banner*/
+
+#scrollBanner {
+    height: 352px;
+    overflow: hidden;
+    position: relative;
+    top: -1px;
+}
+
+.banner_img,
+.banner_img1,
+.banner_img2,
+.banner_img3,
+.banner_img4,
+.banner_img5,
+.banner_img6 {
+    width: 100%;
+    min-width: 1100px;
+    height: 352px;
+    display: block;
+}
+
+.flexslider {
+    position: relative;
+    width: 100%;
+    zoom: 1;
+}
+
+.flexslider .slides li {
+    width: 100%;
+    height: 100%;
+}
+
+.flex-direction-nav a {
+    width: 49px;
+    height: 49px;
+    line-height: 99em;
+    overflow: hidden;
+    margin: -35px 0 0;
+    display: block;
+    background: url(https://act.bundwealth.com/upload/images/bwcus/bwindexsp2.png) no-repeat;
+    position: absolute;
+    top: 50%;
+    z-index: 20;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: all .3s ease;
+    border-radius: 35px;
+}
+
+.flex-direction-nav .flex-next {
+    background-position: -140px -497px;
+    right: 50px;
+}
+
+.flex-direction-nav .flex-prev {
+    background-position: -140px -546px;
+    left: 50px;
+}
+
+.flexslider:hover .flex-next {
+    opacity: 0.8;
+    filter: alpha(opacity=25);
+}
+
+.flexslider:hover .flex-prev {
+    opacity: 0.8;
+    filter: alpha(opacity=25);
+}
+
+.flexslider:hover .flex-next:hover,
+.flexslider:hover .flex-prev:hover {
+    opacity: 1;
+    filter: alpha(opacity=50);
+}
+
+.flex-control-nav {
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+}
+
+.flex-control-nav li {
+    margin: 0 2px;
+    display: inline-block;
+    zoom: 1;
+    margin-right: 8px;
+}
+
+.flex-control-paging li a {
+    display: block;
+    height: 12px;
+    overflow: hidden;
+    text-indent: -99em;
+    width: 12px;
+    cursor: pointer;
+    background-color: #dbdbdb;
+    border-radius: 50%;
+}
+
+.flex-control-paging li a.flex-active,
+.flex-control-paging li.active a {
+    background-color: #f18229;
+}
+
+.flexslider .slides a img {
+    width: 100%;
+    display: block;
+}
+
+.bnrlogin_wrap {
+    width: 1100px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#scrollBannerUl {
+    position: relative;
+}
+
+#pre-loading {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    padding-top: 174px;
+}
+
+.bw-gonggao .notice-span {
+    font-size: 16px;
+    color: #686868;
+    list-style: decimal;
+    list-style-position: inside;
+    width: 240px;
+    height: 35px;
+    line-height: 35px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: block;
+    width: 100%;
+}
+
+.noradius {
+    border-bottom-left-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+}
+
+.notice-div {
+    width: 100%;
+    height: 35px;
+    overflow: hidden;
+    position: relative;
+    top: -7px;
+}
+
+.notice-in-div,
+.notice-in-div-2 {
+    position: absolute;
+}
+
+.notice-in-div-2 {
+    top: 35px;
+}
+
+
+/*loading*/
+
+.ball-beat>div:nth-child(2n -1) {
+    -webkit-animation-delay: .35s !important;
+    -moz-animation-delay: .35s !important;
+    animation-delay: .35s !important;
+}
+
+.ball-beat>div {
+    width: 15px;
+    height: 15px;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    margin: 2px;
+    display: inline-block;
+    -webkit-animation: ball-beat .7s 0s infinite linear;
+    -moz-animation: ball-beat .7s 0s infinite linear;
+    animation: ball-beat .7s 0s infinite linear;
+}
+
+.ball-beat>div,
+.ball-scale-multiple>div {
+    background-color: #ff514c;
+    border-radius: 100%;
+}
+
+.ball-beat>div:nth-child(2n -1) {
+    -webkit-animation-delay: .35s !important;
+    -moz-animation-delay: .35s !important;
+    animation-delay: .35s !important;
+}
+
+@-webkit-keyframes ball-beat {
+    50% {
+        opacity: .2;
+        -webkit-transform: scale(.75);
+        transform: scale(.75)
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+}
+
+@-moz-keyframes ball-beat {
+    50% {
+        opacity: .2;
+        -webkit-transform: scale(.75);
+        -moz-transform: scale(.75);
+        transform: scale(.75)
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        transform: scale(1)
+    }
+}
+
+@keyframes ball-beat {
+    50% {
+        opacity: .2;
+        -webkit-transform: scale(.75);
+        -moz-transform: scale(.75);
+        transform: scale(.75)
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        transform: scale(1)
+    }
+}
+
+
+/*loading end*/
+
+.threeimg {
+    width: 358px;
+    height: 178px;
+}
+
+.insure-eg>div {
+    padding: 0;
+}
+
+.pro-l {
+    position: relative;
+}
+
+.navb li a:hover {
+    color: #ff7334 !important;
+}
+
+.perloading {
+    width: 288px;
+    height: 290px;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.al-login {
+    position: relative;
+}
+
+.loader {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    position: relative;
+    animation: loader-circles 1s linear infinite;
+    top: 50%;
+    margin: -8px auto 0 auto;
+    transform: scale(0.4);
+    -ms-transform: scale(0.4);
+    -moz-transform: scale(0.4);
+    -webkit-transform: scale(0.4);
+    -o-transform: scale(0.4);
+}
+
+@keyframes loader-circles {
+    0% {
+        box-shadow: 0 -27px 0 0 rgba(194, 161, 132, 0.05), 19px -19px 0 0 rgba(194, 161, 132, 0.1), 27px 0 0 0 rgba(194, 161, 132, 0.2), 19px 19px 0 0 rgba(194, 161, 132, 0.3), 0 27px 0 0 rgba(194, 161, 132, 0.4), -19px 19px 0 0 rgba(194, 161, 132, 0.6), -27px 0 0 0 rgba(194, 161, 132, 0.8), -19px -19px 0 0 rgba(194, 161, 132, 1);
+    }
+    12.5% {
+        box-shadow: 0 -27px 0 0 rgba(194, 161, 132, 1), 19px -19px 0 0 rgba(194, 161, 132, 0.05), 27px 0 0 0 rgba(194, 161, 132, 0.1), 19px 19px 0 0 rgba(194, 161, 132, 0.2), 0 27px 0 0 rgba(194, 161, 132, 0.3), -19px 19px 0 0 rgba(194, 161, 132, 0.4), -27px 0 0 0 rgba(194, 161, 132, 0.6), -19px -19px 0 0 rgba(194, 161, 132, 0.8);
+    }
+    25% {
+        box-shadow: 0 -27px 0 0 rgba(194, 161, 132, 0.8), 19px -19px 0 0 rgba(194, 161, 132, 1), 27px 0 0 0 rgba(194, 161, 132, 0.05), 19px 19px 0 0 rgba(194, 161, 132, 0.1), 0 27px 0 0 rgba(194, 161, 132, 0.2), -19px 19px 0 0 rgba(194, 161, 132, 0.3), -27px 0 0 0 rgba(194, 161, 132, 0.4), -19px -19px 0 0 rgba(194, 161, 132, 0.6);
+    }
+    37.5% {
+        box-shadow: 0 -27px 0 0 rgba(194, 161, 132, 0.6), 19px -19px 0 0 rgba(194, 161, 132, 0.8), 27px 0 0 0 rgba(194, 161, 132, 1), 19px 19px 0 0 rgba(194, 161, 132, 0.05), 0 27px 0 0 rgba(194, 161, 132, 0.1), -19px 19px 0 0 rgba(194, 161, 132, 0.2), -27px 0 0 0 rgba(194, 161, 132, 0.3), -19px -19px 0 0 rgba(194, 161, 132, 0.4);
+    }
+    50% {
+        box-shadow: 0 -27px 0 0 rgba(194, 161, 132, 0.4), 19px -19px 0 0 rgba(194, 161, 132, 0.6), 27px 0 0 0 rgba(194, 161, 132, 0.8), 19px 19px 0 0 rgba(194, 161, 132, 1), 0 27px 0 0 rgba(194, 161, 132, 0.05), -19px 19px 0 0 rgba(194, 161, 132, 0.1), -27px 0 0 0 rgba(194, 161, 132, 0.2), -19px -19px 0 0 rgba(194, 161, 132, 0.3);
+    }
+    62.5% {
+        box-shadow: 0 -27px 0 0 rgba(194, 161, 132, 0.3), 19px -19px 0 0 rgba(194, 161, 132, 0.4), 27px 0 0 0 rgba(194, 161, 132, 0.6), 19px 19px 0 0 rgba(194, 161, 132, 0.8), 0 27px 0 0 rgba(194, 161, 132, 1), -19px 19px 0 0 rgba(194, 161, 132, 0.05), -27px 0 0 0 rgba(194, 161, 132, 0.1), -19px -19px 0 0 rgba(194, 161, 132, 0.2);
+    }
+    75% {
+        box-shadow: 0 -27px 0 0 rgba(194, 161, 132, 0.2), 19px -19px 0 0 rgba(194, 161, 132, 0.3), 27px 0 0 0 rgba(194, 161, 132, 0.4), 19px 19px 0 0 rgba(194, 161, 132, 0.6), 0 27px 0 0 rgba(194, 161, 132, 0.8), -19px 19px 0 0 rgba(194, 161, 132, 1), -27px 0 0 0 rgba(194, 161, 132, 0.05), -19px -19px 0 0 rgba(194, 161, 132, 0.1);
+    }
+    87.5% {
+        box-shadow: 0 -27px 0 0 rgba(194, 161, 132, 0.1), 19px -19px 0 0 rgba(194, 161, 132, 0.2), 27px 0 0 0 rgba(194, 161, 132, 0.3), 19px 19px 0 0 rgba(194, 161, 132, 0.4), 0 27px 0 0 rgba(194, 161, 132, 0.6), -19px 19px 0 0 rgba(194, 161, 132, 0.8), -27px 0 0 0 rgba(194, 161, 132, 1), -19px -19px 0 0 rgba(194, 161, 132, 0.05);
+    }
+    100% {
+        box-shadow: 0 -27px 0 0 rgba(194, 161, 132, 0.05), 19px -19px 0 0 rgba(194, 161, 132, 0.1), 27px 0 0 0 rgba(194, 161, 132, 0.2), 19px 19px 0 0 rgba(194, 161, 132, 0.3), 0 27px 0 0 rgba(194, 161, 132, 0.4), -19px 19px 0 0 rgba(194, 161, 132, 0.6), -27px 0 0 0 rgba(194, 161, 132, 0.8), -19px -19px 0 0 rgba(194, 161, 132, 1);
+    }
+}
+
+.newyql {
+    text-align: left;
+    padding-left: 50px;
+}
+
+.newymc {
+    text-align: left;
+    padding-left: 18px;
+    width: 243px;
+}
+
+.rightdq {
+    text-align: right;
+}
+
+.newnewjz {
+    text-align: left;
+    padding-left: 20px;
+    width: 170px;
+}
+
+.newjjin {
+    width: 207px;
+    padding-left: 20px;
+}
+
+.newcont{
+    padding-right: 20px;
+}

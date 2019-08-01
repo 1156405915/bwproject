@@ -1,0 +1,444 @@
+html,
+body {
+    /*background: #f0f0f0;*/
+}
+
+.banner {
+    position: relative;
+    height: 350px;
+    background: url(https://act.bundwealth.com/upload/images/bwcus/new_hq_bannerbg.jpg) no-repeat center top;
+}
+
+.banner_con {
+    display: block;
+    margin: 0 auto;
+    width: 1100px;
+    height: 350px;
+}
+
+.huoqi_banner {
+    font-size: 72px;
+    color: #fff;
+    position: absolute;
+    top: 79px;
+    width: 100%;
+    text-align: center;
+}
+
+.banner a {
+    display: block;
+    width: 108px;
+    height: 37px;
+    line-height: 37px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    margin-left: -54px;
+    bottom: 87px;
+    border: 1px solid #fff;
+}
+
+.wrap {
+    width: 1100px;
+    margin: 0 auto;
+    padding-top: 24px;
+}
+
+.wrap h4 {
+    font-size: 20px;
+    color: #333;
+    padding-left: 15px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.wrap i {
+    position: absolute;
+    width: 5px;
+    height: 20px;
+    border-radius: 4px;
+    left: 0;
+    top: 5px;
+}
+
+.pro_con {
+    margin-bottom: 25px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .06);
+}
+
+i.red {
+    background: #fa665e;
+}
+
+i.brown {
+    background: #b98149;
+}
+
+i.black {
+    background: #0c0c0c;
+}
+
+a.more {
+    float: right;
+    font-size: 14px;
+    color: #adadad;
+}
+
+.fl {
+    float: left
+}
+
+.fr {
+    float: right;
+}
+
+.htb_ico {
+    background: #f00;
+    height: 327px;
+    width: 263px;
+}
+
+.htb_main {
+    width: 837px;
+    background: #fff;
+}
+
+.htb_main>ul {
+    padding-right: 40px;
+    border-bottom: 1px solid #e9e9e9;
+}
+
+.htb_main>ul li {
+    float: right;
+    margin-left: 47px;
+    font-size: 16px;
+    color: #b9b9b9;
+    line-height: 34px;
+    cursor: pointer;
+}
+
+.htb_main>ul li.select {
+    border-bottom: 3px solid #a68970;
+    color: #a3856b;
+}
+
+.pro_l {
+    padding-left: 55px;
+}
+
+.pro_l .htb_proname {
+    font-size: 22px;
+    color: #333;
+    padding-top: 20px;
+}
+
+.pro_l .kt_proname {
+    padding-top: 33px;
+    margin-bottom: 25px;
+}
+
+.pro_l .htb_proname span {
+    font-size: 14px;
+    color: #fe533f;
+    margin-left: 10px;
+}
+
+.pro_l_content li.first {
+    width: 70px;
+}
+
+.tz_date {
+    font-size: 14px;
+    color: #979797;
+    padding: 15px 0 20px;
+}
+
+.pro_l_content {
+    padding-right: 35px;
+    border-right: 1px solid #e5e5e5;
+    position: relative;
+}
+
+.pro_l_content li {
+    float: left;
+}
+
+.pro_l_content li.mid {
+    width: 90px;
+    margin: 0 55px 0 80px;
+}
+
+.pro_info1 {
+    font-size: 32px;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.line_gry {
+    background: #f0f0f0;
+    border-radius: 100px;
+    width: 437px;
+    height: 6px;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.line_already {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #f5d1b3;
+    border-radius: 100px;
+    width: 200px;
+    height: 6px;
+}
+
+.end_date {
+    font-size: 14px;
+    color: #979797;
+    text-align: left;
+}
+
+.end_date span.alre {
+    float: right;
+    margin-right: 35px;
+    font-size: 14px;
+    color: #d2832c;
+}
+
+.pro_info2 {
+    font-size: 14px;
+    color: #979797;
+    margin-bottom: 60px;
+}
+
+.pro_r {
+    overflow: hidden;
+    position: relative;
+    width: 300px;
+    text-align: center;
+}
+
+span.ticket {
+    position: absolute;
+    right: -26px;
+    top: 8px;
+    width: 100px;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+    line-height: 32px;
+    background: #F63A3A;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.szsy {
+    padding-top: 54px;
+    text-align: center;
+    color: #ff7334;
+    font-size: 36px;
+}
+
+.szsy span {
+    font-size: 72px;
+    color: #ff7334;
+}
+
+.pro_r .yq {
+    font-size: 14px;
+    color: #a4a4a4;
+    margin-bottom: 45px;
+}
+
+a.buy {
+    display: block;
+    height: 46px;
+    width: 213px;
+    border-radius: 4px;
+    border: 1px solid #c3ad9b;
+    margin: 0 auto;
+    line-height: 46px;
+    color: #8a5e3c;
+    font-size: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+a.buy:hover{
+    background: linear-gradient(-180deg, #ceb495 0%, #a68970 100%);
+    color: #fff;
+}
+a.hover {
+    color: #fff;
+    background-image: linear-gradient(-180deg, #ceb495 0%, #a68970 100%);
+}
+
+.kt_pro_l {
+    width: 533px;
+}
+
+.kt_pro_info {
+    position: absolute;
+    left: -55px;
+}
+
+.mb34 {
+    margin-bottom: 34px;
+}
+
+.nob {
+    border: none;
+}
+
+.kt_r {
+    width: 304px;
+    height: 327px;
+    /*padding: 10px 41px 0 32px;*/
+    padding: 10px 33px 0;
+    background: #ebebeb;
+}
+
+.model {
+    width: 236px;
+    border-bottom: 1px solid #979797;
+    padding-left: 12px;
+    position: relative;
+    height: 191px;
+}
+
+.model>span {
+    position: absolute;
+    bottom: 0;
+    display: inline-block;
+    width: 54px;
+    background: linear-gradient(-180deg, #b69a7f 0%, #ebebeb 100%);
+}
+
+.model>span>span {
+    position: absolute;
+    top: -20px;
+    width: 54px;
+    text-align: center;
+    display: block;
+    font-size: 12px;
+    color: #000;
+}
+
+.date_all {
+    padding-left: 12px;
+    margin: 8px 0 38px;
+}
+
+.date_all span {
+    font-size: 10px;
+    color: #979797;
+    display: inline-block;
+    width: 54px;
+    text-align: center;
+}
+
+.top_1 {
+    height: 73px;
+    left: 12px;
+}
+
+.top_2 {
+    height: 100px;
+    left: 66px;
+}
+
+.top_3 {
+    height: 135px;
+    left: 120px;
+}
+
+.top_4 {
+    height: 162px;
+    left: 174px;
+}
+
+
+/*huoji_jingxuan*/
+
+.huoji_pro_content {
+    background: #fff;
+}
+
+.huoji_tab li {
+    float: left;
+    font-size: 14px;
+    color: #999;
+    line-height: 40px;
+}
+
+li.pro_code {
+    width: 183px;
+    padding-left: 20px;
+}
+
+li.sy {
+    width: 123px;
+}
+
+.week_sy {
+    width: 154px;
+}
+
+.month_sy {
+    width: 132px;
+}
+
+.three_sy {
+    width: 132px;
+}
+
+.six_sy {
+    width: 132px;
+}
+
+.year_sy {
+    width: 132px;
+}
+
+li.buy {
+    width: 112px;
+    color: #8a5e3c;
+}
+
+.huoji_pro_list li {
+    float: left;
+    height: 68px;
+    border-top: 1px solid #f0f0f0;
+}
+
+.huoji_pro_list li.week_sy {
+    color: #333;
+}
+
+.up {
+    color: #e72525;
+}
+
+li.lh67 {
+    line-height: 67px;
+}
+
+p.pro_name,
+p.sy_mon {
+    padding: 13px 0 5px;
+    color: #333;
+}
+
+p.pro_code1,
+p.sy_date {
+    font-size: 12px;
+    color: #b3b3b3;
+}
+
+.huoji_mb {
+    margin-bottom: 84px;
+}

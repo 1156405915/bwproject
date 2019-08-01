@@ -1,0 +1,425 @@
+.banner {
+    position: relative;
+    height: 350px;
+    background: url(https://act.bundwealth.com/upload/images/bwcus/new_bx_bannerbg.jpg) no-repeat center top;
+}
+
+.banner_content {
+    display: block;
+    margin: 0 auto;
+    width: 1100px;
+    position: relative;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.banner_con {
+    width: 1100px;
+    height: 350px;
+}
+
+.cool_box {
+    position: absolute;
+    border-radius: 5px;
+    width: 660px;
+    height: 330px;
+    right: 0;
+    top: 10px;
+    overflow: hidden;
+}
+.box{
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 0.5s ease-in-out;
+}
+.box>div{
+    float: left;
+}
+.pro_text {
+    padding: 30px 0 0 50px;
+}
+
+.box_discrib {
+    width: 360px;
+    background: rgba(255, 255, 255, .75);
+    color: #333;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    height: 330px;
+}
+
+.pro_sy {
+    width: 300px;
+    background: #fff;
+    box-shadow: -5px 0 4px 0 rgba(0, 0, 0, 0.04);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-top: 44px;
+    text-align: center;
+    height: 330px;
+}
+
+.pro_name {
+    font-size: 32px;
+    margin-bottom: 57px;
+}
+
+.lab {
+    font-size: 14px;
+    position: relative;
+    padding-left: 13px;
+    margin-bottom: 17px;
+}
+
+.lab span {
+    position: absolute;
+    left: 0;
+    top: 5px;
+    display: block;
+    width: 7px;
+    height: 7px;
+    border-radius: 999px;
+    background: #d2a784;
+}
+
+.lab2 {
+    font-size: 12px;
+    color: #333333;
+    margin: 10px 0;
+}
+
+.syl {
+    font-size: 62px;
+    color: #a68970;
+}
+
+.yqnh {
+    font-size: 14px;
+    color: #979797;
+    margin: 15px 0 20px;
+}
+
+a.buy {
+    border-radius: 4px;
+    width: 213px;
+    height: 46px;
+    display: block;
+    margin: 0 auto;
+    line-height: 46px;
+    color: #8a5e3c;
+    border: 1px solid #c3ad9b;
+}
+
+a.buy:hover {
+    background-image: linear-gradient(-180deg, #ceb495 0%, #a68970 100%);
+    color: #fff;
+    border: none;
+}
+
+
+/*pro_begin*/
+
+.wrap {
+    width: 1100px;
+    margin: 0 auto 60px;
+    padding-top: 24px;
+}
+
+.wrap h4 {
+    font-size: 20px;
+    color: #333;
+    padding-left: 15px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.wrap i {
+    position: absolute;
+    width: 5px;
+    height: 20px;
+    border-radius: 4px;
+    left: 0;
+    top: 5px;
+}
+
+a.more {
+    float: right;
+    font-size: 14px;
+    color: #adadad;
+}
+
+.pro_list {
+    margin-bottom: 25px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .06)
+}
+
+.pro_img {
+    float: left;
+    width: 263px;
+    height: 327px;
+    background: #FFA474;
+}
+
+i.yellow {
+    background: #ffb676;
+}
+
+i.green {
+    background: #7adf93;
+}
+
+i.ocean {
+    background: #1bc9c7;
+}
+
+i.puple {
+    background: #8c8ce0;
+}
+
+i.pink {
+    background: #e58bb8;
+}
+
+.pro_content {
+    background: #fff;
+    padding-top: 35px;
+    height: 327px;
+}
+
+.pro_tab {
+    width: 418px;
+    float: left;
+    text-align: center;
+}
+
+.bod {
+    border-right: 1px solid #e5e5e5;
+}
+
+.pro_nam {
+    font-size: 22px;
+    color: #333;
+}
+
+.pro_lab,
+.pro_lab2 {
+    font-size: 14px;
+    color: #979797;
+    margin: 10px 0 25px;
+}
+
+.pro_tab>p.pro_lab3 {
+    font-size: 12px;
+    color: #979797;
+    margin: 10px 0 45px;
+}
+
+.pro_tab div .pro_lab3 {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.padl {
+    padding-left: 55px;
+    text-align: left;
+}
+
+.padl a.buy {
+    position: relative;
+    left: -28px;
+    text-align: center;
+}
+
+.padl span {
+    color: #FF6F45;
+}
+
+.insure-ico {
+    color: #666;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 37px;
+}
+
+.insure-ico dl {
+    float: left;
+}
+
+.marg {
+    margin: 0 44px;
+}
+
+.insure-ico dl dt.ico-1 {
+    background-position: -139px -301px;
+}
+
+.insure-ico dl dt.ico-2 {
+    background-position: -130px -357px;
+}
+
+.insure-ico dl dt.ico-3 {
+    background-position: -135px -452px;
+}
+
+.insure-ico dl dt.ico-4 {
+    background-position: -134px -408px;
+}
+
+.padl p.mb35 {
+    margin-bottom: 35px;
+}
+
+.insure-ico dl dt {
+    margin-bottom: 10px;
+    height: 45px;
+    background: url(https://act.bundwealth.com/upload/images/bwcus/bwindexsp2.png) no-repeat;
+}
+/* 保险早知道 */
+.know{
+    background: #fff;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .06);
+}
+.know_list{
+    width: 33.33%;
+    float: left;
+    padding: 20px 0 25px;
+}
+.know_list img{
+    float: left;
+    margin-left: 20px;
+    margin-right: 12px;
+    width: 113px;
+    height: 84px;
+}
+.know_list p.tit{
+    font-size: 16px;
+    color: #353535;
+    margin-bottom: 20px;
+}
+.know_list p span{
+    font-size: 16px;
+    color: #999;
+    margin-right: 10px;
+}
+span.prev{
+    background: url(https://act.bundwealth.com/upload/images/bwcus/bw_new_pub.png) no-repeat;
+    display: block;
+    width: 22px;
+    height: 33px;
+    position: absolute;
+    left: 385px;
+    top: 150px;
+    background-position: -50px -197px;
+    cursor: pointer;
+}
+span.next{
+    background: url(https://act.bundwealth.com/upload/images/bwcus/bw_new_pub.png) no-repeat;
+    display: block;
+    width: 22px;
+    height: 33px;
+    position: absolute;
+    right: -45px;
+    top: 150px;
+    background-position: -50px -235px;
+    cursor: pointer;
+}
+/* 瑞泰专场 */
+.ruitai{
+        margin-bottom: 25px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .06);
+}
+.titl{
+    font-size: 36px;
+    color: #705b52;
+    text-shadow: 0 4px 7px #fff;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+.ruitai>div{
+    width: 550px;
+    height: 326px;
+    position: relative;
+}
+.rui_l{
+    background: url(https://act.bundwealth.com/upload/images/bwcus/rui_l.jpg) no-repeat center;
+    background-size: 100%;
+}
+.rui_r{
+    background: url(https://act.bundwealth.com/upload/images/bwcus/rui_r.jpg) no-repeat center;
+    background-size: 100%;
+}
+.pro_info{
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    padding-left: 30px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: rgba(255,255,255,.69)
+}
+.pro_info a{
+    border:1px solid #000000;
+    border-radius:4px;
+    width:211px;
+    height:44px;
+    color:  #000;
+    margin-right: 30px;
+    display: block;
+    float: right;
+    font-size: 20px;
+    line-height: 44px;
+    text-align:center;
+    margin-top: 13px;
+}
+/* 保险三位一体 */
+.insure-eg h3 {
+    padding-top: 35px;
+    font-size: 22px;
+    color: #333;
+    padding-bottom: 10px;
+    font-weight: normal;
+    padding-left: 30px;
+}
+.insure-eg>div {
+    float: left;
+    width: 33.33%;
+    box-sizing: border-box;
+    background-position: right bottom;
+    position: relative;
+}
+.insure-eg h3+p {
+    color: #979797;
+    font-size: 12px;
+    padding-left: 30px;
+}
+p.money {
+    margin-top: 55px;
+    font-size: 30px;
+    color: #a38970;
+    padding-left: 30px;
+}
+p.money span {
+    font-size: 60px;
+}
+.eg1 {
+    background:#fff url(https://act.bundwealth.com/upload/images/bwcus/bwindex_eg1.png) no-repeat;
+}
+.eg2 {
+    background:#fff url(https://act.bundwealth.com/upload/images/bwcus/bwindex_eg2.png) no-repeat;
+}
+.eg3 {
+    background:#fff url(https://act.bundwealth.com/upload/images/bwcus/bwindex_eg3.png) no-repeat;
+}
+.bode{
+    border-right: 1px solid #efefef;
+    border-left: 1px solid #efefef;
+}
