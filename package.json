@@ -20,7 +20,7 @@
     "ioredis": "~2.3.0",
     "log4js":"*",
     "log4jx":"*",
-    "morgan": "~1.6.1",
+    "morgan": "~1.9.1",
     "redis": "~2.6.0",
     "serve-favicon": "~2.3.0",
     "helmet":"*",
